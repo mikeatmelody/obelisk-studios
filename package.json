@@ -17,6 +17,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "framer-motion": "^4.1.16",
     "gatsby": "^3.4.1",
     "gatsby-plugin-google-analytics": "^3.5.0",
     "gatsby-plugin-image": "^1.5.0",
@@ -33,6 +34,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "sass": "^1.32.13"
+    "sass": "^1.32.13",
+    "web-vitals": "^1.1.2"
   }
 }

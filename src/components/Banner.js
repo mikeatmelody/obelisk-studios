@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+
 const banner = {
   animate: {
     transition: {
@@ -16,7 +17,7 @@ const letterAni = {
     y: 0,
     transition: {
       ease: [0.6, 0.01, -0.05, 0.95],
-      duration: 1,
+      duration: 3,
     },
   },
 };
@@ -27,12 +28,12 @@ const Banner = () => {
   useEffect(() => {
     setTimeout(() => {
       setPlayMarquee(true);
-    }, 2000);
+    }, 3000);
   }, []);
   return (
     <motion.div className='banner' variants={banner}>
       <BannerRowTop title={"Tom"} />
-      <BannerRowCenter title={"loves"} playMarquee={playMarquee} />
+      <BannerRowCenter title={"Premium Blanks, Embroidery, & Screen Printing"} playMarquee={playMarquee} />
       <BannerRowBottom title={"pp"} />
     </motion.div>
   );
@@ -118,7 +119,7 @@ const BannerRowCenter = ({ title, playMarquee }) => {
       <motion.div
         initial={{ y: 310 }}
         animate={{ y: 0 }}
-        transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1 }}
+        transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 3 }}
         className='marquee__inner'>
         <AnimatedLetters title={title} disabled />
         <AnimatedLetters title={title} />

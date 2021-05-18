@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import { StaticImage } from 'gatsby-plugin-image'
 import Image from "./Image";
 
 // Import images
@@ -58,10 +58,19 @@ const Loader = ({ setLoading }) => {
       >
         <ImageBlock variants={item} id="image-1" />
         <motion.div variants={itemMain} className="transition-image">
-          <motion.img
+          <motion.div
             layoutId="main-image-1"
-            src={process.env.PUBLIC_URL + `/images/tommbboi.jpg`}
-          />
+          >
+              <StaticImage
+                      src="../images/pexels-tembela-bohle-1884583.jpg"
+                      alt="landing-image"
+                      placeholder="blurred"
+                      layout="fixed"
+                      // width={200}
+                      // height={200}
+    
+                    />
+            </motion.div>
         </motion.div>
         {/* <ImageBlock variants={item} id="image-3" />
         <ImageBlock variants={item} id="image-4" />

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "gatsby"
 
 const Header = () => {
   return (
@@ -13,22 +14,17 @@ const Header = () => {
       }}
       className='header'>
       <div className='header-inner'>
-        <div className='logo'>Obelisk Studios</div>
+
+        <div className='logo'><Link to="/">Obelisk Studios</Link></div>
         <nav className='nav'>
           <li>
-            <a href='/'>Catalog</a>
-          </li>
-          <li>
-            <a href='/strategy'>Marketing & Design</a>
-          </li>
-          <li>
-            <a href='/cases'>Portfolio</a>
+            <a href='/catalog'>Catalog</a>
           </li>
           <li>
             <a href='/about'>About Us</a>
           </li>
           <li>
-            <a href='/why'>Why work with us?</a>
+            <a href='/services'>Services</a>
           </li>
         </nav>
         <div className='contact'>

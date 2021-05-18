@@ -1,0 +1,49 @@
+.contact-section {
+  text-align: center;
+  padding: 20px 20vw;
+  button,
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+  }
+a {
+  color: #000;
+}
+  .contact-title {
+    font-size: 2.7rem;
+    font-weight: 700;
+    padding: 20px;
+  }
+
+  .contact-copy {
+    padding: 20px;
+  }
+  .email {
+    padding: 20px 20px;
+    margin-bottom: 2vw;
+  }
+  .form-section {
+    margin-top: 4vw;
+    input,
+    textarea {
+      margin-left: 10px;
+      background-color: inherit;
+    }
+   
+
+    .form-name,
+    .form-email,
+    .form-subject,
+    .form-message {
+      font-size: 1.6rem;
+    }
+    input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+    textarea, input { 
+        border: none;
+        border-bottom: 2px solid black;
+     }
+  }
+}

@@ -1,0 +1,21 @@
+.footer {
+    height: 300px;
+    margin-top: 296px;
+    text-align: center;
+    margin-left: 200px;
+
+    &__wrapper {
+        width: col(12);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    &__content {
+        display: flex;
+        justify-content: flex-end;
+        justify-content: space-between;
+        width: 100%;
+    }
+}

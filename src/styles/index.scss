@@ -6,6 +6,7 @@
 
 @import "./base/global.scss";
 @import "./base/reset.scss";
+@import "./base/typography.scss";
 
 // components
 @import "./components/banner.scss";
@@ -13,3 +14,10 @@
 @import "./components/layout.scss";
 @import "./components/loader.scss";
 @import "./components/marquee.scss";
+@import "./components/homecontent.scss";
+@import "./components/footer.scss";
+
+// pages
+@import "./pages/contact.scss";
+@import "./pages/catalog.scss";
+@import "./pages/services.scss";

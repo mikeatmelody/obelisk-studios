@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
-import Layout from '../components/layout'
-import "../styles/index.scss"
+import Layout from "../components/layout";
+import "../styles/index.scss";
+import { StaticImage } from "gatsby-plugin-image"
 
-import Header from '../components/Header'
-import Banner from '../components/Banner'
-import Loader from '../components/Loader'
+import Header from "../components/Header";
+import Banner from "../components/Banner";
+import Loader from "../components/Loader";
+import HomeContent from "../components/HomeContent"
 
 // markup
 const IndexPage = () => {
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -18,13 +19,12 @@ const IndexPage = () => {
       : document.querySelector("body").classList.remove("loading");
   }, [loading]);
 
-
   return (
     <Layout>
-        <AnimateSharedLayout type='crossfade'>
+      <AnimateSharedLayout type="crossfade">
         <AnimatePresence>
           {loading ? (
-            <motion.div key='loader'>
+            <motion.div key="loader">
               <Loader setLoading={setLoading} />
             </motion.div>
           ) : (
@@ -32,22 +32,34 @@ const IndexPage = () => {
               <Header />
               <Banner />
               {!loading && (
-                <div className='transition-image final'>
-                  <motion.img
-                    transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1.6 }}
-                    src={process.env.PUBLIC_URL + `/images/tommbboi.jpg`}
-                    layoutId='main-image-1'
-                  />
+                <div className="transition-image final">
+                  <motion.div
+                    transition={{
+                      ease: [0.6, 0.01, -0.05, 0.9],
+                      duration: 1.6,
+                    }}
+                  >
+                    <StaticImage
+                      src="../images/pexels-liza-summer-6347888.jpg"
+                      alt="TOM"
+                      placeholder="blurred"
+                      layout="fixed"
+                      width={900}
+                      // height={200}
+                      layoutId="main-image-1"
+                    />
+                  </motion.div>
+                  
                 </div>
-                
               )}
+              <HomeContent />
             </>
           )}
-          
         </AnimatePresence>
       </AnimateSharedLayout>
+  
     </Layout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

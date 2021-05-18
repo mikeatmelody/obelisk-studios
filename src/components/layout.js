@@ -1,6 +1,7 @@
 import React from "react";
 
 import Footer from "../components/Footer"
+import "../styles/index.scss"
 
 const Layout = ({ children }) => {
 

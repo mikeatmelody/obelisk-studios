@@ -1,23 +1,23 @@
 // abtracts
 
-@import "./abstracts/variables.scss";
+@import "./abstracts/variables";
 
 // base
 
-@import "./base/global.scss";
-@import "./base/reset.scss";
-@import "./base/typography.scss";
+@import "./base/global";
+@import "./base/reset.";
+@import "./base/typography";
 
 // components
-@import "./components/banner.scss";
-@import "./components/header.scss";
-@import "./components/layout.scss";
-@import "./components/loader.scss";
-@import "./components/marquee.scss";
-@import "./components/homecontent.scss";
-@import "./components/footer.scss";
+@import "./components/banner";
+@import "./components/header";
+@import "./components/layout";
+@import "./components/loader";
+@import "./components/marquee";
+@import "./components/homecontent";
+@import "./components/footer";
 
 // pages
-@import "./pages/contact.scss";
-@import "./pages/catalog.scss";
-@import "./pages/services.scss";
+@import "./pages/contact";
+@import "./pages/catalog";
+@import "./pages/services";

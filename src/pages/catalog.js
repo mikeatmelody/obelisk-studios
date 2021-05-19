@@ -32,7 +32,6 @@ const CatalogPage = () => {
               <li>KOI</li>
               <li>OGIO</li>
               <li>NEW ERA</li>
-              <li>RED KAP</li>
             </ul>
           </div>
         </motion.div>

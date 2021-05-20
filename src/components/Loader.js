@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { StaticImage } from 'gatsby-plugin-image'
-import Image from "./Image";
 
 // Import images
 
@@ -56,7 +55,7 @@ const Loader = ({ setLoading }) => {
         exit="exit"
         className="loader-inner"
       >
-        <ImageBlock variants={item} id="image-1" />
+        {/* <ImageBlock variants={item} id="image-1" /> */}
         <motion.div variants={itemMain} className="transition-image">
           <motion.div
             layoutId="main-image-1"
@@ -65,10 +64,8 @@ const Loader = ({ setLoading }) => {
                       src="../images/pexels-tembela-bohle-1884583.jpg"
                       alt="landing-image"
                       placeholder="blurred"
-                      layout="fixed"
-                      // width={200}
-                      // height={200}
-    
+                      layout="fullWidth"
+                      width={1200}
                     />
             </motion.div>
         </motion.div>
@@ -80,22 +77,22 @@ const Loader = ({ setLoading }) => {
   );
 };
 
-export const ImageBlock = ({ posX, posY, variants, id }) => {
-  return (
-    <motion.div
-      variants={variants}
-      className={`image-block ${id}`}
-      style={{
-        top: `${posY}vh`,
-        left: `${posX}vw `,
-      }}
-    >
-      <Image
-        src={process.env.PUBLIC_URL + `/images/${id}.webp`}
-        fallback={process.env.PUBLIC_URL + `/images/${id}.jpg`}
-        alt={id}
-      />
-    </motion.div>
-  );
-};
+// export const ImageBlock = ({ posX, posY, variants, id }) => {
+//   return (
+//     <motion.div
+//       variants={variants}
+//       className={`image-block ${id}`}
+//       style={{
+//         top: `${posY}vh`,
+//         left: `${posX}vw `,
+//       }}
+//     >
+//       <Image
+//         src={process.env.PUBLIC_URL + `/images/${id}.webp`}
+//         fallback={process.env.PUBLIC_URL + `/images/${id}.jpg`}
+//         alt={id}
+//       />
+//     </motion.div>
+//   );
+// };
 export default Loader;

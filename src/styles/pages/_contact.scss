@@ -7,9 +7,9 @@
   textarea {
     font-family: inherit;
   }
-a {
-  color: #000;
-}
+  a {
+    color: #000;
+  }
   .contact-title {
     font-size: 2.7rem;
     font-weight: 700;
@@ -30,7 +30,6 @@ a {
       margin-left: 10px;
       background-color: inherit;
     }
-   
 
     .form-name,
     .form-email,
@@ -38,12 +37,15 @@ a {
     .form-message {
       font-size: 1.6rem;
     }
-    input:focus, textarea:focus, select:focus{
-        outline: none;
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
     }
-    textarea, input { 
-        border: none;
-        border-bottom: 2px solid black;
-     }
+    textarea,
+    input {
+      border: none;
+      border-bottom: 2px solid black;
+    }
   }
 }

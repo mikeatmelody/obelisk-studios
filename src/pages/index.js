@@ -43,8 +43,8 @@ const IndexPage = () => {
                       src="../images/pexels-liza-summer-6347888.jpg"
                       alt="TOM"
                       placeholder="blurred"
-                      layout="fixed"
-                      width={900}
+                      layout="fullWidth"
+                      width={2400}
                       // height={200}
                       layoutId="main-image-1"
                     />

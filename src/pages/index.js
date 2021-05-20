@@ -45,7 +45,6 @@ const IndexPage = () => {
                       placeholder="blurred"
                       layout="fullWidth"
                       width={2400}
-                      // height={200}
                       layoutId="main-image-1"
                     />
                   </motion.div>

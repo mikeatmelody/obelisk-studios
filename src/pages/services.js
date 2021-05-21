@@ -4,11 +4,12 @@ import Layout from "../components/layout";
 import Header from "../components/Header";
 
 import { motion } from "framer-motion";
-
+import SEO from "../components/seo"
 
 const ServicesPage = () => {
   return (
     <Layout>
+      <SEO title="Services" />
       <main className="services container">
         <title>Services</title>
         <Header />

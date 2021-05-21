@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Loader from "../components/Loader";
 import HomeContent from "../components/HomeContent"
+import SEO from "../components/seo"
 
 // markup
 const IndexPage = () => {
@@ -21,6 +22,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <SEO title="Home" />
       <AnimateSharedLayout type="crossfade">
         <AnimatePresence>
           {loading ? (

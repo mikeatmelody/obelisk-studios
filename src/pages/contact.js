@@ -4,10 +4,12 @@ import Layout from "../components/layout";
 import Header from "../components/Header";
 
 import { motion } from "framer-motion";
+import SEO from "../components/seo"
 
 const ContactPage = () => {
   return (
     <Layout>
+        <SEO title="Contact" />
       <main className="container">
         <title>Contact Us</title>
         <Header />

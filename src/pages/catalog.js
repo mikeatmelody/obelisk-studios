@@ -4,10 +4,12 @@ import Layout from "../components/layout";
 import Header from "../components/Header";
 
 import { motion } from "framer-motion";
+import SEO from "../components/seo"
 
 const CatalogPage = () => {
   return (
     <Layout>
+        <SEO title="Catalog" />
       <main className="catalog container">
         <title>Catalog</title>
         <Header />

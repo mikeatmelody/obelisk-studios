@@ -6,6 +6,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: "obelisk-studios",
+    author: "Mike at Melody Digital"
   },
   plugins: [
     // {

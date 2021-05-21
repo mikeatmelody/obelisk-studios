@@ -1,0 +1,13 @@
+.about-section {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    .p-text {
+        grid-column: 1;
+    }
+    .about-image {
+        grid-column: 2;
+    }
+}

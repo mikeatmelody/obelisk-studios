@@ -32,9 +32,9 @@ const Banner = () => {
   }, []);
   return (
     <motion.div className='banner' variants={banner}>
-      <BannerRowTop title={"Tom"} />
+      <BannerRowTop title={"Obelisk"} />
       <BannerRowCenter title={"Premium Blanks, Embroidery, & Screen Printing"} playMarquee={playMarquee} />
-      <BannerRowBottom title={"pp"} />
+      <BannerRowBottom title={"Studios"} />
     </motion.div>
   );
 };
@@ -71,8 +71,7 @@ const BannerRowTop = ({ title }) => {
         }}
         className='row-col'>
         <span className='row-message'>
-          We are specialised in setting up the foundation of your brand and
-          setting you up for success.
+        Providing quality garments, printing and embroidery at competitive rates, regardless of budget.
         </span>
       </motion.div>
     </div>

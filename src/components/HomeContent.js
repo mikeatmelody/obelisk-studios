@@ -31,9 +31,10 @@ const HomeContent = () => {
         hidden: { opacity: 0, y: 72 },
       }}
     >
+        <section>
       <h1>Services</h1>
       <p className="copy">
-        Pressing Matters is a multi-faceted print shop that specializes in
+        Obelisk Studios is a multi-faceted print shop that specializes in
         screen printing and design. Proudly located in East Vancouver, our
         friendly in-house staff is here to help bring your designs to life.
         Screen Printing and Embroidery pricing are based on the quantity and
@@ -43,6 +44,7 @@ const HomeContent = () => {
         Water Based Screen Printing Graphic Design Digital Printing (stickers,
         buttons, decals)
       </p>
+      </section>
     </motion.div>
   );
 };

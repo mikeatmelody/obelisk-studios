@@ -5,13 +5,13 @@ import Header from "../components/Header";
 
 import { motion } from "framer-motion";
 import SEO from "../components/seo"
+import { StaticImage } from "gatsby-plugin-image"
 
 const AboutPage = () => {
   return (
     <Layout>
         <SEO title="About" />
       <main className="container">
-        <title>About Us</title>
         <Header />
         <motion.div
           initial={{ opacity: 0, y: -60 }}
@@ -22,6 +22,7 @@ const AboutPage = () => {
             delay: 1.6,
           }}
         >
+          <div className="about-section">
           <p className="p-text">
             Obelisk Studios is a boutique print and design workshop
             located in East Vancouver. We specialize in merchandise, design and
@@ -34,6 +35,15 @@ const AboutPage = () => {
             multifaceted firm that can undertake any project and deliver on time
             and on budget. Please don’t hesitate to get in touch.
           </p>
+          <StaticImage 
+          src="../images/pexels-kai-pilger-996329.jpg"
+          alt="About Image"
+          className="about-image"
+          layout="fullWidth"
+          aspectRatio={16/9}
+          
+          />
+          </div>
         </motion.div>
       </main>
     </Layout>

@@ -5,21 +5,14 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: "obelisk-studios",
+    title: "Obelisk Studios",
     author: "Mike at Melody Digital"
   },
   plugins: [
-    // {
-    //   resolve: "gatsby-source-wordpress",
-    //   options: {
-    //     url: "",
-    //   },
-    // },
     {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
-        // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },

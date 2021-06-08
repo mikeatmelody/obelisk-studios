@@ -1,13 +1,22 @@
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
+// Define site URL here
+
+let URL;
+if (process.env.NODE_ENV === 'production') {
+  URL = 'https://obelisk-studios-demo.netlify.app';
+} else {
+  URL = 'http://localhost:8000';
+
+}
 
 
 module.exports = {
   siteMetadata: {
     title: "Obelisk Studios",
     author: "Mike at Melody Digital",
-    siteUrl: "localhost:8000"
+    siteUrl: URL,
   },
   plugins: [
     {

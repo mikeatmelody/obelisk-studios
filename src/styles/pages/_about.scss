@@ -3,11 +3,18 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    // @media (max-width: $layout-breakpoint-small) {
+    //     display: flex;
+    //     margin: 10vw;
+    //   }
 
     .p-text {
         grid-column: 1;
     }
     .about-image {
         grid-column: 2;
+        @media (max-width: $layout-breakpoint-small) {
+           margin-right: 20px;
+          }
     }
 }

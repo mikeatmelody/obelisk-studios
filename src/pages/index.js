@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import Layout from "../components/layout";
 import "../styles/index.scss";
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image";
 
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Loader from "../components/Loader";
-import HomeContent from "../components/HomeContent"
-import SEO from "../components/seo"
+import HomeContent from "../components/HomeContent";
+import SEO from "../components/seo";
 
 // markup
 const IndexPage = () => {
@@ -36,19 +36,23 @@ const IndexPage = () => {
               {!loading && (
                 <div className="transition-image final">
                   <motion.div
-                    transition={{
-                      ease: [0.6, 0.01, -0.05, 0.9],
-                      duration: 1.6,
-                    }}
+                 initial={{ opacity: 0, y: -60 }}
+                 animate={{ opacity: 1, y: 0 }}
+                 transition={{
+                   ease: "easeInOut",
+                   duration: 1,
+                   delay: 1.6,
+                 }}
                   >
                     <StaticImage
                       src="../images/pexels-liza-summer-6347888.jpg"
                       alt="TOM"
                       placeholder="blurred"
                       layout="fullWidth"
+                      aspectRatio={21 / 9}
+                      loading="blurred"
                     />
                   </motion.div>
-                  
                 </div>
               )}
               <HomeContent />
@@ -56,7 +60,6 @@ const IndexPage = () => {
           )}
         </AnimatePresence>
       </AnimateSharedLayout>
-  
     </Layout>
   );
 };

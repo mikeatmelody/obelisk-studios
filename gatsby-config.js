@@ -6,7 +6,8 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: "Obelisk Studios",
-    author: "Mike at Melody Digital"
+    author: "Mike at Melody Digital",
+    siteUrl: "localhost:8000"
   },
   plugins: [
     {
@@ -14,6 +15,7 @@ module.exports = {
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        downloadLocal: true,
       },
     },
 

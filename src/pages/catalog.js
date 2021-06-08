@@ -14,20 +14,30 @@ const CatalogPage = () => {
       <main className="catalog container">
         <Header />
         <div className="catalog-brand-titles">
+        <motion.div
+                 initial={{ opacity: 0, y: -60 }}
+                 animate={{ opacity: 1, y: 0 }}
+                 transition={{
+                   ease: "easeInOut",
+                   duration: 1,
+                   delay: 1.6,
+                 }}
+                  >
           <StaticImage
             src="../images/pexels-tembela-bohle-1884583.jpg"
             alt="Catalog Backdrop Image"
             layout="fullWidth"
             aspectRatio={21 / 9}
           />
+          </motion.div>
         </div>
         <motion.div
-          initial={{ opacity: 0, y: -60 }}
+          initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
             ease: "easeInOut",
             duration: 1,
-            delay: 1.6,
+            delay: 2.6,
           }}
         >
           <div className="container">

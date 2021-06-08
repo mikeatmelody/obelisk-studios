@@ -1,14 +1,32 @@
 .home-content-section {
-    // margin-top: 400px;
-    // margin: 20vw 20vw;
-    // min-height: 40vh;
+  min-height: 40vh;
+  width: 100%;
+  padding: 20px 20px;
 
-    h1 {
-        font-size: 2.7rem;
-    }
-    .copy {
-        text-align: left;
-        width: 30vw;
-        margin-top: 12px;
-    }
+  h1 {
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+  h2 {
+      font-size: 2rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-weight: 600;
+  }
+  .copy {
+    text-align: left;
+    width: 30vw;
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.1;
+  }
+  .list {
+    margin: 0 1vw ;
 }
+  li::before{
+    content: '-';
+  } 
+}
+
+

@@ -18,7 +18,6 @@ const HomeContent = () => {
   }, [animation, inView]);
   return (
     <motion.div
-      className="home-content-section container"
       ref={contentRef}
       animate={animation}
       initial="hidden"
@@ -31,20 +30,26 @@ const HomeContent = () => {
         hidden: { opacity: 0, y: 72 },
       }}
     >
-        <section>
-      <h1>Services</h1>
-      <p className="copy">
-        Obelisk Studios is a multi-faceted print shop that specializes in
-        screen printing and design. Proudly located in East Vancouver, our
-        friendly in-house staff is here to help bring your designs to life.
-        Screen Printing and Embroidery pricing are based on the quantity and
-        number of colours used in your design. Please contact for a custom
-        quote. ​ Our services include: Multi-Colour Screen Printing - Plastisol
-        Inks Direct to Garment (DTG) Digital Printing Embroidery Eco-Friendly
-        Water Based Screen Printing Graphic Design Digital Printing (stickers,
-        buttons, decals)
-      </p>
-      </section>
+      <div className="home-content-section container">
+        <h1>Services</h1>
+        <p className="copy">
+          Obelisk Studios is a multi-faceted print shop that specializes in
+          screen printing and design. Proudly located in East Vancouver, our
+          friendly in-house staff is here to help bring your designs to life.
+          Screen Printing and Embroidery pricing are based on the quantity and
+          number of colours used in your design. Please contact for a custom
+          quote.
+        
+        <ul className="list">
+         <h2>Our services include:</h2>
+          <li>Multi-Colour Screen Printing - Plastisol Inks</li>
+          <li>Direct to Garment (DTG) Digital Printing</li>
+          <li>Embroidery</li>
+          <li>Eco-Friendly Water Based Screen Printing</li>
+          <li>Graphic Design Digital Printing (stickers,buttons, decals)</li>
+        </ul>
+        </p>
+      </div>
     </motion.div>
   );
 };

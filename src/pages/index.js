@@ -6,6 +6,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import Header from "../components/Header";
 import Banner from "../components/Banner";
+import Footer from '../components/Footer';
 import Loader from "../components/Loader";
 import HomeContent from "../components/HomeContent";
 import SEO from "../components/seo";
@@ -56,6 +57,7 @@ const IndexPage = () => {
                 </div>
               )}
               <HomeContent />
+              <Footer />
             </>
           )}
         </AnimatePresence>

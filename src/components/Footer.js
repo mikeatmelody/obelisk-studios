@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react"
+import React, { useEffect } from "react"
 
 // Scroll Animations
 import { useInView } from "react-intersection-observer"
@@ -9,7 +9,7 @@ const Footer = () => {
     const animation = useAnimation()
     const [footerRef, inView] = useInView({
       triggerOnce: true,
-      rootMargin: "300px",
+      rootMargin: "-300px",
     })
     useEffect(() => {
       if (inView) {
@@ -29,18 +29,15 @@ const Footer = () => {
           },
           hidden: { opacity: 0, y: 72 },
         }}>
-            <div className="footer__wrapper container">
-                <div className="footer__content">
-                    <p>604-369-6472</p>
-                    <p>tom@obeliskstudios.ca</p>
-                    <p>955 E. Hastings Street</p>
-                    <p>Vancouver, BC</p>
+                <div className="content container">
+                    <p className="col-1">604-369-6472</p>
+                    <p className="col-2">tom@obeliskstudios.ca</p>
+                    <p className="col-3">955 E. Hastings Street</p>
+                    <p className="col-4">Vancouver, BC</p>
                     <div className="footer__links">
 
                     </div>
                 </div>
-
-            </div>
         </motion.footer>
     )
 }

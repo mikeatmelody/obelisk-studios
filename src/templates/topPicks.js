@@ -4,10 +4,9 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Header from "../components/Header";
 import Footer from '../components/Footer';
-// import SEO from "../components/seo"
+
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { motion } from "framer-motion";
-import { Breadcrumb } from "gatsby-plugin-breadcrumb"
+
 // run template query
 
 export const query = graphql`
@@ -52,7 +51,6 @@ const TopPicksTemplate = ({ data: { item }, location }) => {
       <Header />
       <main className="container">
         <div className="top-picks">
-        <Breadcrumb className="breadcrumb" location={location} crumbLabel={item.title} />
           <div className="thumbnail-image">
             <GatsbyImage image={image} alt={item.thumbnailImage.title} />
             <h2 className="tp-title">{item.title}</h2>

@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { Breadcrumb } from "gatsby-plugin-breadcrumb";
+
 
 // run template query
 export const query = graphql`
@@ -37,17 +37,12 @@ export const query = graphql`
   }
 `;
 
-const BagsAndHatsTemplate = ({ data: { allItems }, location }) => {
+const BagsAndHatsTemplate = ({ data: { allItems } }) => {
   const products = allItems.nodes;
   return (
     <Layout>
       <Header />
-      <main className="container">
-        <Breadcrumb
-          className="breadcrumb"
-          location={location}
-          crumbLabel={products.title}
-        />
+      <main className="products-grid container">
         {products.map((product) => (
           <Link
             key={product.title}

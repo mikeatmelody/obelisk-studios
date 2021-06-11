@@ -41,7 +41,7 @@ const HoodiesTemplate = ({ data: { allItems } }) => {
   return (
     <Layout>
       <Header />
-      <main className="container">
+      <main className="products-grid container">
         {products.map((product) => (
               <Link key={product.title} to={`/top-picks/${product.contentType}/${product.slug}`}>
           <div>

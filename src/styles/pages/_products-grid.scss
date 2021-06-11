@@ -1,0 +1,33 @@
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 40px;
+
+  @media (max-width: $layout-breakpoint-large) {
+  }
+
+  @media (max-width: $layout-breakpoint-medium) {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  @media (max-width: $layout-breakpoint-small) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  @media (max-width: $layout-breakpoint-xsmall) {
+  }
+
+  img {
+    max-height: 80vh;
+  }
+  h4, a {
+      font-size: 3rem;
+      text-align: left;
+      padding: 1vw;
+      color: $black;
+      text-decoration: underline;
+
+  }
+}

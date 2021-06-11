@@ -42,7 +42,7 @@ const PantsTemplate = ({ data: { allItems }, location }) => {
   return (
     <Layout>
       <Header />
-      <main className="container">
+      <main className="products-grid container">
         <Breadcrumb
           className="breadcrumb"
           location={location}

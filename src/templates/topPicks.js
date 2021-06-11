@@ -1,12 +1,13 @@
 import React from "react";
 import { graphql } from "gatsby";
-// import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+// import { renderRichText } from "gatsby-source-contentful/rich-text"
 import Layout from "../components/layout";
 import Header from "../components/Header";
+import Footer from '../components/Footer';
 // import SEO from "../components/seo"
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { motion } from "framer-motion";
-
+import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 // run template query
 
 export const query = graphql`
@@ -36,7 +37,7 @@ export const query = graphql`
   }
 `;
 
-const TopPicksTemplate = ({ data: { item } }) => {
+const TopPicksTemplate = ({ data: { item }, location }) => {
   const image = getImage(item.thumbnailImage);
   const hoverImage = getImage(item.hoverImage);
 
@@ -51,18 +52,19 @@ const TopPicksTemplate = ({ data: { item } }) => {
       <Header />
       <main className="container">
         <div className="top-picks">
-          
+        <Breadcrumb className="breadcrumb" location={location} crumbLabel={item.title} />
           <div className="thumbnail-image">
             <GatsbyImage image={image} alt={item.thumbnailImage.title} />
             <h2 className="tp-title">{item.title}</h2>
             <GatsbyImage image={hoverImage} alt={item.hoverImage.title} />
           </div>
           {/* render the rich text format description */}
-          {/*   
-        <main>{documentToReactComponents(item.description.json, options)}</main> 
-        */}
+     
+        {/* {documentToReactComponents(item.hyperLink.raw, options)} */}
+ 
         </div>
       </main>
+      <Footer/>
     </Layout>
   );
 };

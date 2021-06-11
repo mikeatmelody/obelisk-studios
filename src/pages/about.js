@@ -2,7 +2,7 @@ import * as React from "react";
 // import { Link } from "gatsby"
 import Layout from "../components/layout";
 import Header from "../components/Header";
-
+import Footer from '../components/Footer'
 import { motion } from "framer-motion";
 import SEO from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
@@ -11,7 +11,7 @@ const AboutPage = () => {
   return (
     <Layout>
         <SEO title="About" />
-      <main className="container">
+      <main className="about container">
         <Header />
         <motion.div
           initial={{ opacity: 0, y: -60 }}
@@ -46,6 +46,7 @@ const AboutPage = () => {
           </div>
         </motion.div>
       </main>
+      <Footer />
     </Layout>
   );
 };

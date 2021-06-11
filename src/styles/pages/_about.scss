@@ -1,20 +1,23 @@
-.about-section {
-
+.about {
+    min-height: 60vh;
+  .about-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    margin-bottom: 20vh;
     // @media (max-width: $layout-breakpoint-small) {
     //     display: flex;
     //     margin: 10vw;
     //   }
 
     .p-text {
-        grid-column: 1;
+      grid-column: 1;
     }
     .about-image {
-        grid-column: 2;
-        @media (max-width: $layout-breakpoint-small) {
-           margin-right: 20px;
-          }
+      grid-column: 2;
+      @media (max-width: $layout-breakpoint-small) {
+        margin-right: 20px;
+      }
     }
+  }
 }

@@ -1,6 +1,29 @@
 .contact-section {
   text-align: center;
   padding: 20px 20vw;
+  line-height: 1.1;
+  min-height: 60vh;
+
+  @media (max-width: $layout-breakpoint-large) {
+    display: block;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+      @media (max-width: $layout-breakpoint-medium) {
+        margin-left: 12vw;
+    margin-right: 12vw;
+  
+    }
+
+  @media (max-width: $layout-breakpoint-small) {
+    display: block;
+    padding: 10px;
+  }
+  @media (max-width: $layout-breakpoint-medium) {
+    display: block;
+    padding: 0;
+  }
   button,
   input,
   select,
@@ -18,13 +41,20 @@
 
   .contact-copy {
     padding: 20px;
+    // @media (max-width: $layout-breakpoint-medium) {
+    
+    //   padding: 10px;
+    //   margin-left: 20vw;
+    //   margin-right: 20vw;
+    // }
   }
   .email {
     padding: 20px 20px;
     margin-bottom: 2vw;
   }
   .form-section {
-    margin-top: 4vw;
+    margin-top: 2vw;
+    margin-bottom: 6vw;
     input,
     textarea {
       margin-left: 10px;
@@ -34,8 +64,18 @@
     .form-name,
     .form-email,
     .form-subject,
-    .form-message {
+    .form-message,
+    .upload {
       font-size: 1.6rem;
+      display: block;
+    }
+
+    .upload > input {
+      border-bottom: none !important;
+      margin: 20px;
+    }
+    .clear {
+      border-bottom: none;
     }
     input:focus,
     textarea:focus,

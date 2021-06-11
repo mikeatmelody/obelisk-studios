@@ -4,15 +4,19 @@ import Layout from "../components/layout";
 import Header from "../components/Header";
 
 import { motion } from "framer-motion";
-import SEO from "../components/seo"
+import SEO from "../components/seo";
+import HomeContent from "../components/HomeContent";
+import Footer from "../components/Footer";
+import { StaticImage } from "gatsby-plugin-image";
 
 const ServicesPage = () => {
   return (
     <Layout>
       <SEO title="Services" />
-      <main className="services container">
+      <Header />
+      <main className="container">
         <title>Services</title>
-        <Header />
+
         <motion.div
           initial={{ opacity: 0, y: -60 }}
           animate={{ opacity: 1, y: 0 }}
@@ -22,20 +26,23 @@ const ServicesPage = () => {
             delay: 1.6,
           }}
         >
-        <h1>Services</h1>
-        <p className="copy">
-          Obelisk Studios is a multi-faceted print shop that specializes in
-          screen printing and design. Proudly located in East Vancouver, our
-          friendly in-house staff is here to help bring your designs to life.
-          Screen Printing and Embroidery pricing are based on the quantity and
-          number of colours used in your design. Please contact for a custom
-          quote. ​ Our services include: Multi-Colour Screen Printing -
-          Plastisol Inks Direct to Garment (DTG) Digital Printing Embroidery
-          Eco-Friendly Water Based Screen Printing Graphic Design Digital
-          Printing (stickers, buttons, decals)
-        </p>
+          <div className="services">
+            <div className="grid-item-1">
+              <HomeContent />
+            </div>
+            <div className="grid-item-2">
+              <StaticImage
+                src="../images/istockphoto-1168858990-612x612 1.jpg"
+                alt="Services Image"
+                layout="fullWidth"
+                aspectRatio={16 / 9}
+                transformOptions={{ grayscale: true }}
+              />
+            </div>
+          </div>
         </motion.div>
       </main>
+      <Footer />
     </Layout>
   );
 };

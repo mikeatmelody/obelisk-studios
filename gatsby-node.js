@@ -9,6 +9,8 @@ exports.createPages = async ({ actions, graphql }) => {
     {
       allPicks: allContentfulTopPicks {
         nodes {
+          id
+          title
           contentType
           slug
         }
@@ -19,13 +21,19 @@ exports.createPages = async ({ actions, graphql }) => {
   //create page for each product and list
   data.allPicks.nodes.forEach((item) => {
     createPage({
-      path: `catalog/top-picks/${item.contentType}/${item.slug}`,
+      path: `top-picks/${item.contentType}/${item.slug}`,
       component: path.resolve("./src/templates/topPicks.js"),
       context: {
         // data passed to context is available
         // in page queries as GraphQL variables.
+        id: item.id,
+        title: item.title,
         slug: item.slug,
+        contentType: item.contentType
+
       },
     });
   });
 };
+
+

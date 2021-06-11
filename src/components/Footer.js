@@ -1,23 +1,34 @@
-import React from "react"
+import React, { useEffect } from "react"
 
 // Scroll Animations
-// import { useInView } from "react-intersection-observer"
-// import { useAnimation, motion } from "framer-motion"
+import { useInView } from "react-intersection-observer"
+import { useAnimation, motion } from "framer-motion"
 
 
 const Footer = () => {
-    // const animation = useAnimation()
-    // const [footerRef, inView] = useInView({
-    //   triggerOnce: true,
-    //   rootMargin: "-500px",
-    // })
-    // useEffect(() => {
-    //   if (inView) {
-    //     animation.start("visible")
-    //   }
-    // }, [animation, inView])
+    const animation = useAnimation()
+    const [footerRef, inView] = useInView({
+      triggerOnce: true,
+      rootMargin: "0px",
+    })
+    useEffect(() => {
+      if (inView) {
+        animation.start("visible")
+      }
+    }, [animation, inView])
     return (
-        <footer className="footer">
+        <motion.footer className="footer"
+        ref={footerRef}
+        animate={animation}
+        initial="hidden"
+        variants={{
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.8, ease: [0.6, 0.05, -0.01, 0.9], delay: 2 },
+          },
+          hidden: { opacity: 0, y: 60 },
+        }}>
                 <div className="content container">
                     <p className="col-1">604-369-6472</p>
                     <p className="col-2">tom@obeliskstudios.ca</p>
@@ -27,7 +38,7 @@ const Footer = () => {
 
                     </div>
                 </div>
-        </footer>
+        </motion.footer>
     )
 }
 export default Footer

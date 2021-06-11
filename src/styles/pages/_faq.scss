@@ -1,0 +1,29 @@
+.faq {
+    text-align: center;
+    line-height: 1.1;
+    .wrapper {
+        margin: 0 20vw;
+    }
+    
+    h1, span {
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 1vw 0;
+    }
+    h2 {
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 1vw 0;
+    }
+    p {
+        margin: 1vh 2vw;
+        color: #3C3C43;
+    }
+
+}
+
+.link {
+    margin-left: 2vw;
+    font-size: 2rem;
+    color: $black;
+}

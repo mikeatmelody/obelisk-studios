@@ -1,9 +1,13 @@
 .layout-styles {
-  
-.container {
+  .container {
     max-width: 91.66vw;
     width: 100%;
     margin: 0 auto;
-}
-}
+  }
 
+//   main {
+//     @media (max-width: $layout-breakpoint-large) {
+//       min-height: 70vh;
+//     }
+//   }
+}

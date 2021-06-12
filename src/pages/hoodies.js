@@ -43,11 +43,19 @@ const HoodiesTemplate = ({ data: { allItems } }) => {
       <Header />
       <main className="products-grid container">
         {products.map((product) => (
-              <Link key={product.title} to={`/top-picks/${product.contentType}/${product.slug}`}>
-          <div>
-            <GatsbyImage image={getImage(product.thumbnailImage)} alt={product.thumbnailImage.title} />
-            <h4>{product.title}</h4>
-          </div>
+          <Link
+            key={product.title}
+            to={`/top-picks/${product.contentType}/${product.slug}`}
+          >
+            <div>
+              <div className="image-wrapper">
+                <GatsbyImage
+                  image={getImage(product.thumbnailImage)}
+                  alt={product.thumbnailImage.title}
+                />
+              </div>
+              <h4>{product.title}</h4>
+            </div>
           </Link>
         ))}
       </main>

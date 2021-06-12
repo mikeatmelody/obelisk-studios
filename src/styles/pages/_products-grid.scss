@@ -2,30 +2,52 @@
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
-  gap: 40px;
+  gap: 20px;
 
   @media (max-width: $layout-breakpoint-large) {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
   }
 
   @media (max-width: $layout-breakpoint-medium) {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
+    gap: 10px;
   }
 
   @media (max-width: $layout-breakpoint-small) {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    gap: 10px;
   }
   @media (max-width: $layout-breakpoint-xsmall) {
+    gap: 10px;
+  }
+
+  .image-wrapper {
+      
+      @media (max-width: $layout-breakpoint-large) {
+        width: 28vw;  
+      }
+      @media (max-width: $layout-breakpoint-medium) {
+        width: 475px;  
+      }
+      @media (max-width: $layout-breakpoint-small) {
+        width: 100%;  
+      }
+      @media (max-width: $layout-breakpoint-xsmall) {
+        width: 23.75vw;  
+      }
+     
   }
 
   img {
     max-height: 80vh;
   }
   h4, a {
-      font-size: 3rem;
+      font-size: 2.4rem;
       text-align: left;
-      padding: 1vw;
+      padding: 1vw 0;
       color: $black;
       text-decoration: underline;
 

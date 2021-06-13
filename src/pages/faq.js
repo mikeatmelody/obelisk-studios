@@ -1,14 +1,10 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import Layout from "../components/layout";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 
 const FAQPage = () => {
   return (
-    <Layout>
-      <Header />
+    <>
       <main className="container">
         <title>FAQ</title>
         <Link className="link" to="/">Go home</Link>.
@@ -116,8 +112,7 @@ const FAQPage = () => {
 
         </div>
       </main>
-      <Footer />
-    </Layout>
+    </>
   );
 };
 

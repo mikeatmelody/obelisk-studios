@@ -1,18 +1,13 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import Layout from "../components/layout";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-
 import { motion } from "framer-motion";
 import SEO from "../components/seo";
 import { StaticImage } from "gatsby-plugin-image";
 
 const TopPicksPage = () => {
   return (
-    <Layout>
+    <>
       <SEO title="Top Picks" />
-      <Header />
       <main className="top-picks container">
         <motion.div
           initial={{ opacity: 0, y: -60 }}
@@ -25,15 +20,21 @@ const TopPicksPage = () => {
         >
           <div className="text-grid">
             <h1>OUR MOST POPULAR CLOTHING OPTIONS</h1>
-            <p>We have many options available through our wholesalers for just about any garment you are looking for. These items featured here are just a collection of our most commonly sold t-shirts, hoodies, crewnecks and totes. Please feel free to request any custom brand and we will do our best to supply it.</p>
-          <StaticImage
-            src="../images/pexels-tembela-bohle-1884583.jpg"
-            alt="Top Picks Backdrop Image"
-            layout="fullWidth"
-            aspectRatio={21 / 9}
-            transformOptions={{ grayscale: true }}
-            // className="catalog-banner"
-          />
+            <p>
+              We have many options available through our wholesalers for just
+              about any garment you are looking for. These items featured here
+              are just a collection of our most commonly sold t-shirts, hoodies,
+              crewnecks and totes. Please feel free to request any custom brand
+              and we will do our best to supply it.
+            </p>
+            <StaticImage
+              src="../images/pexels-tembela-bohle-1884583.jpg"
+              alt="Top Picks Backdrop Image"
+              layout="fullWidth"
+              aspectRatio={21 / 9}
+              transformOptions={{ grayscale: true }}
+              // className="catalog-banner"
+            />
           </div>
         </motion.div>
 
@@ -60,7 +61,6 @@ const TopPicksPage = () => {
                     // aspectRatio={9 / 16}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
-
                   />
                 </div>
               </Link>
@@ -75,7 +75,6 @@ const TopPicksPage = () => {
                     // aspectRatio={9 / 16}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
-
                   />
                 </div>
               </Link>
@@ -103,8 +102,7 @@ const TopPicksPage = () => {
           </div>
         </motion.div>
       </main>
-      <Footer />
-    </Layout>
+    </>
   );
 };
 

@@ -1,8 +1,5 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
-import Layout from "../components/layout";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 
@@ -43,8 +40,7 @@ const BagsAndHatsTemplate = ({ data: { allItems } }) => {
     name: "Hats & Bags"
 }
   return (
-    <Layout>
-      <Header />
+    <>
       <main className="products-title container">
       <h1>{pageName.name}</h1>
           <Link to="/top-picks">Top Picks</Link>
@@ -65,8 +61,7 @@ const BagsAndHatsTemplate = ({ data: { allItems } }) => {
         ))}
         </div>
       </main>
-      <Footer />
-    </Layout>
+    </>
   );
 };
 

@@ -1,8 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/layout";
-import Header from "../components/Header";
-import Footer from '../components/Footer';
 // import { BLOCKS, MARKS, Text } from "@contentful/rich-text-types"
 // import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
@@ -39,31 +36,29 @@ export const query = graphql`
 const TopPicksTemplate = ({ data: { item } }) => {
   const image = getImage(item.thumbnailImage);
   const hoverImage = getImage(item.hoverImage);
-  
+
   // const Bold = ({ children }) => <span className="bold">{children}</span>
-// const Text = ({ children }) => <p className="align-center">{children}</p>
-  const description = item.hyperLink.raw
-  console.log(description)
+  // const Text = ({ children }) => <p className="align-center">{children}</p>
+  const description = item.hyperLink.raw;
+  console.log(description);
   // const options = {
-  
+
   // }
   // const output = renderRichText(description, options)
   return (
-    <Layout>
-      <Header />
+    <>
       <main className="container">
         <div className="top-picks">
           <div className="thumbnail-image">
             <GatsbyImage image={image} alt={item.thumbnailImage.title} />
-            
+
             <h2 className="tp-title">{item.title}</h2>
             <GatsbyImage image={hoverImage} alt={item.hoverImage.title} />
           </div>
-        {/* <div><Bold>{output}</Bold></div> */}
+          {/* <div><Bold>{output}</Bold></div> */}
         </div>
       </main>
-      <Footer/>
-    </Layout>
+    </>
   );
 };
 

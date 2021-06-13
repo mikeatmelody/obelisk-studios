@@ -1,17 +1,13 @@
 import * as React from "react";
 // import { Link } from "gatsby"
-import Layout from "../components/layout";
-import Header from "../components/Header";
 import { motion } from "framer-motion";
 import SEO from "../components/seo";
-import Footer from "../components/Footer";
 import { StaticImage } from "gatsby-plugin-image";
 
 const BrandsPage = () => {
   return (
-    <Layout>
+    <>
       <SEO title="Brands" />
-      <Header />
       <main className="brands container">
         <title>Brands</title>
 
@@ -75,8 +71,7 @@ const BrandsPage = () => {
           </div>
         </motion.div>
       </main>
-      <Footer />
-    </Layout>
+    </>
   );
 };
 

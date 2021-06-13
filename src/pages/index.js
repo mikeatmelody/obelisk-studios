@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
-import Layout from "../components/layout";
 import "../styles/index.scss";
 import { StaticImage } from "gatsby-plugin-image";
-
-import Header from "../components/Header";
 import Banner from "../components/Banner";
-import Footer from '../components/Footer';
 import Loader from "../components/Loader";
 import HomeContent from "../components/HomeContent";
 import SEO from "../components/seo";
@@ -22,7 +18,7 @@ const IndexPage = () => {
   }, [loading]);
 
   return (
-    <Layout>
+    <>
       <SEO title="Home" />
       <AnimateSharedLayout type="crossfade">
         <AnimatePresence>
@@ -32,7 +28,6 @@ const IndexPage = () => {
             </motion.div>
           ) : (
             <>
-              <Header />
               <Banner />
               {!loading && (
                 <div className="transition-image final">
@@ -57,12 +52,11 @@ const IndexPage = () => {
                 </div>
               )}
               <HomeContent />
-              <Footer />
             </>
           )}
         </AnimatePresence>
       </AnimateSharedLayout>
-    </Layout>
+    </>
   );
 };
 

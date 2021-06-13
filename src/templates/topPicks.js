@@ -1,10 +1,10 @@
 import React from "react";
 import { graphql } from "gatsby";
-// import { renderRichText } from "gatsby-source-contentful/rich-text"
 import Layout from "../components/layout";
 import Header from "../components/Header";
 import Footer from '../components/Footer';
-
+// import { BLOCKS, MARKS, Text } from "@contentful/rich-text-types"
+// import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 // run template query
@@ -20,11 +20,11 @@ export const query = graphql`
       }
       thumbnailImage {
         title
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
+        gatsbyImageData(width: 500, placeholder: BLURRED)
       }
       hoverImage {
         title
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
+        gatsbyImageData(width: 500, placeholder: BLURRED)
       }
     }
 
@@ -36,16 +36,18 @@ export const query = graphql`
   }
 `;
 
-const TopPicksTemplate = ({ data: { item }, location }) => {
+const TopPicksTemplate = ({ data: { item } }) => {
   const image = getImage(item.thumbnailImage);
   const hoverImage = getImage(item.hoverImage);
-
+  
+  // const Bold = ({ children }) => <span className="bold">{children}</span>
+// const Text = ({ children }) => <p className="align-center">{children}</p>
+  const description = item.hyperLink.raw
+  console.log(description)
   // const options = {
-
-  //   // options for rich text formating
-
-  // };
-
+  
+  // }
+  // const output = renderRichText(description, options)
   return (
     <Layout>
       <Header />
@@ -57,10 +59,7 @@ const TopPicksTemplate = ({ data: { item }, location }) => {
             <h2 className="tp-title">{item.title}</h2>
             <GatsbyImage image={hoverImage} alt={item.hoverImage.title} />
           </div>
-          {/* render the rich text format description */}
-     
-        {/* {documentToReactComponents(item.hyperLink.raw, options)} */}
- 
+        {/* <div><Bold>{output}</Bold></div> */}
         </div>
       </main>
       <Footer/>

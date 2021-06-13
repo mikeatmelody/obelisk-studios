@@ -30,7 +30,7 @@
         width: 28vw;  
       }
       @media (max-width: $layout-breakpoint-medium) {
-        width: 475px;  
+        width: 400px;  
       }
       @media (max-width: $layout-breakpoint-small) {
         width: 100%;  
@@ -42,14 +42,28 @@
   }
 
   img {
-    max-height: 80vh;
+    // max-height: 80vh;
   }
   h4, a {
-      font-size: 2.4rem;
+      font-size: 20px;
       text-align: left;
-      padding: 1vw 0;
+    //   padding: 1vw 0;
       color: $black;
       text-decoration: underline;
-
   }
+  h4 {
+    max-width: 300px;
+    @media (max-width: $layout-breakpoint-medium) {
+        font-size: 2rem;
+        padding: 0;
+      }
+  }
+}
+
+.products-title {
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        font-weight: 500;
+    }
 }

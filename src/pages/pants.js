@@ -21,11 +21,11 @@ export const query = graphql`
         }
         thumbnailImage {
           title
-          gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
+          gatsbyImageData(width: 500, placeholder: BLURRED)
         }
         hoverImage {
           title
-          gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
+          gatsbyImageData(width: 500, placeholder: BLURRED)
         }
       }
     }
@@ -37,17 +37,18 @@ export const query = graphql`
   }
 `;
 
-const PantsTemplate = ({ data: { allItems }, location }) => {
+const PantsTemplate = ({ data: { allItems } }) => {
   const products = allItems.nodes;
+  const pageName = {
+    name: "Pants"
+}
   return (
     <Layout>
       <Header />
-      <main className="products-grid container">
-        <Breadcrumb
-          className="breadcrumb"
-          location={location}
-          crumbLabel={products.title}
-        />
+      <main className="products-title container">
+      <h1>{pageName.name}</h1>
+          <Link to="/top-picks">Top Picks</Link>
+          <div className="products-grid">
         {products.map((product) => (
           <Link
             key={product.title}
@@ -62,6 +63,7 @@ const PantsTemplate = ({ data: { allItems }, location }) => {
             </div>
           </Link>
         ))}
+        </div>
       </main>
       <Footer />
     </Layout>

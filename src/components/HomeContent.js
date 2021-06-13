@@ -32,7 +32,7 @@ const HomeContent = () => {
     >
       <div className="home-content-section container">
         <h1>Services</h1>
-        <p className="copy">
+        <div className="copy">
           Obelisk Studios is a multi-faceted print shop that specializes in
           screen printing and design. Proudly located in East Vancouver, our
           friendly in-house staff is here to help bring your designs to life.
@@ -41,14 +41,16 @@ const HomeContent = () => {
           quote.
         
         <ul className="list">
+          <div>
          <h2>Our services include:</h2>
+         </div>
           <li>Multi-Colour Screen Printing - Plastisol Inks</li>
           <li>Direct to Garment (DTG) Digital Printing</li>
           <li>Embroidery</li>
           <li>Eco-Friendly Water Based Screen Printing</li>
           <li>Graphic Design Digital Printing (stickers,buttons, decals)</li>
         </ul>
-        </p>
+        </div>
       </div>
     </motion.div>
   );

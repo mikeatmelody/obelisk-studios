@@ -34,7 +34,7 @@ const ContactPage = () => {
               604-369-6472
             </a>
           </p> */}
-          <form method="post" action="#" className="form-section">
+          <form method="POST" action="#" className="form-section" data-netlify="true" name="contact">
             <label className="form-name">
               Name:
               <input

@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const NotFoundPage = () => {
   return (
     <>
-    <main>
+    <main className="container">
       <title>Success</title>
       <h1>Success!</h1>
       <p>

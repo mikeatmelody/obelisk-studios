@@ -51,7 +51,9 @@ const IndexPage = () => {
                   </motion.div>
                 </div>
               )}
+              <div style={{marginBottom: "10vh"}}>
               <HomeContent />
+              </div>
             </>
           )}
         </AnimatePresence>

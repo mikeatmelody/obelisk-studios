@@ -2,7 +2,7 @@
   text-align: center;
   padding: 20px 20vw;
   line-height: 1.1;
-  min-height: 60vh;
+  // min-height: 40vh;
 
   @media (max-width: $layout-breakpoint-large) {
     display: block;
@@ -10,11 +10,10 @@
     margin-right: 10vw;
   }
 
-      @media (max-width: $layout-breakpoint-medium) {
-        margin-left: 12vw;
+  @media (max-width: $layout-breakpoint-medium) {
+    margin-left: 12vw;
     margin-right: 12vw;
-  
-    }
+  }
 
   @media (max-width: $layout-breakpoint-small) {
     display: block;
@@ -41,12 +40,6 @@
 
   .contact-copy {
     padding: 20px;
-    // @media (max-width: $layout-breakpoint-medium) {
-    
-    //   padding: 10px;
-    //   margin-left: 20vw;
-    //   margin-right: 20vw;
-    // }
   }
   .email {
     padding: 20px 20px;

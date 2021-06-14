@@ -8,7 +8,7 @@ const Footer = () => {
   const animation = useAnimation();
   const [footerRef, inView] = useInView({
     triggerOnce: true,
-    rootMargin: "0px",
+    rootMargin: "-100px",
   });
   useEffect(() => {
     if (inView) {
@@ -26,12 +26,12 @@ const Footer = () => {
           opacity: 1,
           y: 0,
           transition: {
-            duration: 0.8,
+            duration: 0.6,
             ease: [0.6, 0.05, -0.01, 0.9],
-            delay: 2,
+            delay: 3,
           },
         },
-        hidden: { opacity: 0, y: 60 },
+        hidden: { opacity: 0, y: 72 },
       }}
     >
       <div className="content container">

@@ -1,49 +1,26 @@
 .top-picks {
   .text-grid {
     text-align: center;
-    min-height: 30vh;
+    margin: 4.66vw;
+
     h1 {
       font-size: 2.7rem;
       font-weight: 600;
-      top: 40%;
-      left: 50%;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      text-shadow: 2px 2px #646060;
       z-index: 1;
-      color: $white;
-      @media (max-width: $layout-breakpoint-medium) {
-        top: 30%;
-        left: 50%;
-      }
+      color: $black;
       @media (max-width: $layout-breakpoint-small) {
-        top: 25%;
-        left: 50%;
-        font-size: 18px;
-      }
-      @media (max-width: $layout-breakpoint-xsmall) {
-        top: 20%;
-        left: 50%;
+       font-size: 1.7rem;
+       margin-bottom: 8px;
+
       }
     }
     p {
-      top: 45%;
-      left: 50%;
-      position: absolute;
       z-index: 1;
-      transform: translate(-50%, -50%);
-      color: $white;
-      text-shadow: 2px 2px #646060;
-      @media (max-width: $layout-breakpoint-medium) {
-        top: 40%;
-        left: 50%;
-        font-size: 16px;
-      }
+      color: $black;
+      margin: 8px 20vw;
       @media (max-width: $layout-breakpoint-small) {
-        display: none;
-      }
-      @media (max-width: $layout-breakpoint-xsmall) {
-        display: none;
+        margin: 0;
+
       }
     }
   }
@@ -83,10 +60,13 @@
     }
   }
   .title {
-    font-size: 3.7rem;
+    font-size: 2.7rem;
     font-weight: 600;
     text-align: center;
     margin: 2vw;
+    @media (max-width: $layout-breakpoint-small) {
+      font-size: 1.7rem;
+     }
   }
 
   .card-grid {

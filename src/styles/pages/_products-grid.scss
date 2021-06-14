@@ -1,8 +1,10 @@
 .products-grid {
+  margin-top: 4vh;
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
   gap: 20px;
+  margin-bottom: 4vh;
 
   @media (max-width: $layout-breakpoint-large) {
     grid-template-columns: repeat(3, auto);
@@ -35,9 +37,9 @@
       @media (max-width: $layout-breakpoint-small) {
         width: 100%;  
       }
-      @media (max-width: $layout-breakpoint-xsmall) {
-        width: 23.75vw;  
-      }
+      // @media (max-width: $layout-breakpoint-xsmall) {
+      //   width: 23.75vw;  
+      // }
      
   }
 

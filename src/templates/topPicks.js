@@ -50,6 +50,7 @@ const TopPicksTemplate = ({ data: { item } }) => {
       <main className="container">
         <div className="top-picks">
           <div className="thumbnail-image">
+            
             <GatsbyImage image={image} alt={item.thumbnailImage.title} />
 
             <h2 className="tp-title">{item.title}</h2>

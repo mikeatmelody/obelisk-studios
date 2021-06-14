@@ -27,14 +27,6 @@ const TopPicksPage = () => {
               crewnecks and totes. Please feel free to request any custom brand
               and we will do our best to supply it.
             </p>
-            <StaticImage
-              src="../images/pexels-tembela-bohle-1884583.jpg"
-              alt="Top Picks Backdrop Image"
-              layout="fullWidth"
-              aspectRatio={21 / 9}
-              transformOptions={{ grayscale: true }}
-              // className="catalog-banner"
-            />
           </div>
         </motion.div>
 

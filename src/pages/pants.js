@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { Breadcrumb } from "gatsby-plugin-breadcrumb";
+import { motion } from 'framer-motion'
 
 // run template query
 export const query = graphql`
@@ -50,13 +50,13 @@ const PantsTemplate = ({ data: { allItems } }) => {
             key={product.title}
             to={`/top-picks/${product.contentType}/${product.slug}`}
           >
-            <div>
+            <motion.div className="image-wrapper" whileHover={{ scale: 1.01 }}>
               <GatsbyImage
                 image={getImage(product.thumbnailImage)}
                 alt={product.thumbnailImage.title}
               />
               <h4>{product.title}</h4>
-            </div>
+            </motion.div>
           </Link>
         ))}
         </div>

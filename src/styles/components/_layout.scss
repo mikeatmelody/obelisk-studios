@@ -1,4 +1,9 @@
 .layout-styles {
+  position: relative;
+  // min-height: 100vh;
+  .content-wrap {
+    padding-bottom: 2.5rem;
+  }
   .container {
     max-width: 91.66vw;
     width: 100%;

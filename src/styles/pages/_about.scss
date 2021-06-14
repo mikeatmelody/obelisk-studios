@@ -12,6 +12,10 @@
       text-align: center;
       font-size: 2.3rem;
       line-height: 1.3;
+      @media (max-width: $layout-breakpoint-small) {
+        font-size: 2rem;
+        margin-top: 10vh;
+      }
     }
     .about-image {
       @media (max-width: $layout-breakpoint-small) {

@@ -27,13 +27,6 @@ const AboutPage = () => {
               the best product we can is our goal, and mission. Below are some
               highlights of our most recent work!
             </p>
-            {/* <StaticImage
-              src="../images/pexels-kai-pilger-996329.jpg"
-              alt="About Image"
-              className="about-image"
-              layout="fullWidth"
-              aspectRatio={16 / 9}
-            /> */}
           </div>
         </motion.div>
       </main>

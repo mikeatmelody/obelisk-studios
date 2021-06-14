@@ -28,6 +28,7 @@ const Footer = () => {
           transition: {
             duration: 0.6,
             ease: [0.6, 0.05, -0.01, 0.9],
+            delay: 2,
           },
         },
         hidden: { opacity: 0, y: 20 },

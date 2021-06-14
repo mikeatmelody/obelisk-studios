@@ -48,9 +48,9 @@ const TopPicksPage = () => {
                   <StaticImage
                     src="../images/TSHIRTS.jpg"
                     alt="T Shirt Top Picks"
-                    layout="fullWidth"
+                    // layout="fullWidth"
                     loading="lazy"
-                    // aspectRatio={9 / 16}
+                    wi={600}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
                   />
@@ -62,9 +62,9 @@ const TopPicksPage = () => {
                   <StaticImage
                     src="../images/HOODIE.jpg"
                     alt="Hoodie Top Picks"
-                    layout="fullWidth"
+                    // layout="fullWidth"
                     loading="lazy"
-                    // aspectRatio={9 / 16}
+                    width={600}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
                   />
@@ -73,21 +73,57 @@ const TopPicksPage = () => {
               <Link to="/crewnecks">
                 <div className="top-pick-card-3">
                   <h1>Crewnecks</h1>
+                  <StaticImage
+                    src="../images/crewneck.jpg"
+                    alt="Crewneck Top Picks"
+                    // layout="fullWidth"
+                    loading="lazy"
+                    width={600}
+                    objectFit="cover"
+                    // transformOptions={{ grayscale: true }}
+                  />
                 </div>
               </Link>
               <Link to="/pants">
                 <div className="top-pick-card-4">
                   <h1>Pants</h1>
+                  <StaticImage
+                    src="../images/SWEATPANTS.jpg"
+                    alt="Pants Top Picks"
+                    // layout="fullWidth"
+                    loading="lazy"
+                    width={600}
+                    objectFit="cover"
+                    // transformOptions={{ grayscale: true }}
+                  />
                 </div>
               </Link>
               <Link to="/bags-and-hats">
                 <div className="top-pick-card-5">
                   <h1>Bags & Hats</h1>
+                  <StaticImage
+                    src="../images/bags-and-hats.jpg"
+                    alt="Bags and Hats Top Picks"
+                    // layout="fullWidth"
+                    loading="lazy"
+                    width={600}
+                    objectFit="cover"
+                    // transformOptions={{ grayscale: true }}
+                  />
                 </div>
               </Link>
               <Link to="/kids">
                 <div className="top-pick-card-6">
                   <h1>Kids</h1>
+                  <StaticImage
+                    src="../images/KIDS.jpg"
+                    alt="Bags and Hats Top Picks"
+                    // layout="fullWidth"
+                    loading="lazy"
+                    width={600}
+                    objectFit="cover"
+                    // transformOptions={{ grayscale: true }}
+                  />
                 </div>
               </Link>
             </div>

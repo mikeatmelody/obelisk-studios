@@ -30,7 +30,7 @@
     color: white;
     font-size: 2.4rem;
     text-shadow: 2px 2px #646060;
-    line-height: 1.1;
+
 
     .brand-title {
       position: absolute;
@@ -54,9 +54,6 @@
       left: 60%;
       transform: translate(-50%, -50%);
       z-index: 1;
-    }
-    .catalog-banner {
-      // z-index: 2;
     }
   }
   .title {
@@ -82,8 +79,6 @@
     .top-pick-card-1 {
       grid-column: 1;
       grid-row: 1;
-      height: 60vh;
-      overflow: hidden;
       justify-content: center;
       h1 {
         top: 50%;
@@ -93,7 +88,7 @@
         // transform: translate(-50%, -50%);
         // align-items: center;
       }
-      background-color: #333;
+      
       @media (max-width: $layout-breakpoint-small) {
         margin-top: 10px;
         margin-left: 6vw;
@@ -103,8 +98,6 @@
     .top-pick-card-2 {
       grid-column: 2;
       grid-row: 1;
-      height: 60vh;
-      overflow: hidden;
       h1 {
         top: 50%;
         left: 50%;
@@ -113,7 +106,7 @@
         // transform: translate(-50%, -50%);
         // align-items: center;
       }
-      background-color: #333;
+      
       @media (max-width: $layout-breakpoint-small) {
         margin-top: 10px;
         margin-left: 6vw;
@@ -123,7 +116,7 @@
     .top-pick-card-3 {
       grid-column: 3;
       grid-row: 1;
-      height: 60vh;
+  
       h1 {
         top: 50%;
         left: 50%;
@@ -132,7 +125,7 @@
         // transform: translate(-50%, -50%);
         // align-items: center;
       }
-      background-color: #333;
+      
       @media (max-width: $layout-breakpoint-small) {
         margin-top: 10px;
         margin-left: 6vw;
@@ -142,7 +135,8 @@
     .top-pick-card-4 {
       grid-column: 1;
       grid-row: 2;
-      height: 60vh;
+   
+
       h1 {
         top: 50%;
         left: 50%;
@@ -151,7 +145,7 @@
         // transform: translate(-50%, -50%);
         // align-items: center;
       }
-      background-color: #333;
+      
       @media (max-width: $layout-breakpoint-small) {
         margin-top: 10px;
         margin-left: 6vw;
@@ -161,7 +155,6 @@
     .top-pick-card-5 {
       grid-column: 2;
       grid-row: 2;
-      height: 60vh;
       h1 {
         top: 50%;
         left: 50%;
@@ -170,7 +163,7 @@
         // transform: translate(-50%, -50%);
         // align-items: center;
       }
-      background-color: #333;
+      
       @media (max-width: $layout-breakpoint-small) {
         margin-top: 10px;
         margin-left: 6vw;
@@ -180,7 +173,7 @@
     .top-pick-card-6 {
       grid-column: 3;
       grid-row: 2;
-      height: 60vh;
+   
       h1 {
         top: 50%;
         left: 50%;
@@ -189,7 +182,7 @@
         // transform: translate(-50%, -50%);
         // align-items: center;
       }
-      background-color: #333;
+      
       @media (max-width: $layout-breakpoint-small) {
         margin-top: 10px;
         margin-left: 6vw;

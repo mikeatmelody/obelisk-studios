@@ -3,7 +3,6 @@ import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import "../styles/index.scss";
 import { StaticImage } from "gatsby-plugin-image";
 import Banner from "../components/Banner";
-
 import HomeContent from "../components/HomeContent";
 import SEO from "../components/seo";
 

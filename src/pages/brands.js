@@ -10,18 +10,19 @@ const BrandsPage = () => {
       <SEO title="Brands" />
       <main className="brands container">
         <title>Brands</title>
-
+        
         <motion.div
           initial={{ opacity: 0, y: -60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
+            delayChildren: 0.5,
+            staggerDirection: -1,
             ease: "easeInOut",
             duration: 1,
-            delay: 1.6,
           }}
         >
+
           <div className="brand-titles">
-            <h1 className="brand-title">OUR BRANDS</h1>
             <ul className="left-col">
               <li>ADIDAS</li>
               <li>GILDAN</li>
@@ -60,14 +61,15 @@ const BrandsPage = () => {
               <li>BURNSIDE APPAREL</li>
               <li>RABBIT SKINS</li>
             </ul>
+            {/* <div className="catalog-banner">
             <StaticImage
               src="../images/pexels-tembela-bohle-1884583.jpg"
               alt="Catalog Backdrop Image"
               layout="fullWidth"
               aspectRatio={21 / 9}
               transformOptions={{ grayscale: true }}
-              // className="catalog-banner"
             />
+            </div> */}
           </div>
         </motion.div>
       </main>

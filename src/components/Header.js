@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "gatsby";
+import { useLocation } from "@reach/router"
 
-const Header = () => {
+const Header = ({ menuState, setMenuState}) => {
+  const location = useLocation()
+  useEffect(() => {
+    setMenuState(false)
+  }, [location])
   return (
     <motion.div
       initial={{ opacity: 0, y: -180 }}
@@ -14,33 +19,34 @@ const Header = () => {
       }}
       className="header"
     >
-      <div className="header-inner">
+      <header className="header-inner">
         <div className="logo">
-          <Link to="/">Obelisk Studios</Link>
+          <Link activeClassName="active" to="/">Obelisk Studios</Link>
         </div>
         <nav className="nav">
           <li>
-            <a href="/services">Services</a>
+            <Link activeClassName="active" to="/services">Services</Link>
           </li>
           <li>
-            <a href="/top-picks">Top Picks</a>
+            <Link activeClassName="active" to="/top-picks">Top Picks</Link>
           </li>
           <li>
-            <a href="/about">About Us</a>
+            <Link activeClassName="active"  to="/about">About Us</Link>
           </li>
 
           <li>
-            <a href="/brands">Brands</a>
+            <Link activeClassName="active" to="/brands">Brands</Link>
           </li>
         </nav>
         <div className="contact">
           <a href="/contact">Let's work together</a>
         </div>
-        <div className="hamburger-menu">
+        <div onClick={() => setMenuState(!menuState)} 
+        className="hamburger-menu">
           <span></span>
           <span></span>
         </div>
-      </div>
+      </header>
     </motion.div>
   );
 };

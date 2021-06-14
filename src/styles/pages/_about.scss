@@ -1,12 +1,17 @@
 .about {
   width: 100%;
   .about-section {
-    margin: 8.66vw;
+    margin: 6.66vw;
 
     // @media (max-width: $layout-breakpoint-small) {
     //     display: flex;
     //     margin: 10vw;
     //   }
+    .ig {
+      text-decoration: underline;
+      color: $black;
+      margin-top: 40px;
+    }
 
     .p-text {
       text-align: center;

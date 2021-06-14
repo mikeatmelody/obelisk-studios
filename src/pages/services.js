@@ -29,7 +29,7 @@ const ServicesPage = () => {
             </div>
             <div className="grid-item-2">
               <StaticImage
-                src="../images/print.jpg"
+                src="../images/services.jpg"
                 alt="Services Image"
                 layout="fullWidth"
                 aspectRatio={16 / 9}

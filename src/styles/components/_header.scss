@@ -30,8 +30,28 @@
         font-weight: 700;
         font-size: 2.6rem;
         @media (max-width: $layout-breakpoint-medium) {
-          font-size: 2.8rem;
+          font-size: 1.6rem;
           flex: 4;
+        }
+                span {
+          &.disabled {
+            cursor: not-allowed;
+            opacity: 0.4;
+          }
+        }
+        span {
+          &.label {
+            position: relative;
+            margin-left: 0.5rem;
+            cursor: not-allowed;
+          }
+        }
+        &.active {
+          font-weight: 600;
+          position: relative;
+          @media (max-width: 876px) {
+            font-weight: 400;
+          }
         }
       }
       .nav {
@@ -55,11 +75,15 @@
         }
       }
       .contact {
-        @media (max-width: $layout-breakpoint-medium) {
-          flex: 1;
-        }
         @media (max-width: $layout-breakpoint-large) {
           font-size: 2rem;
+        }
+        @media (max-width: $layout-breakpoint-medium) {
+          font-size: 1.5rem;
+          flex: 1;
+        }
+        @media (max-width: $layout-breakpoint-small) {
+          font-size: 1.3rem;
         }
         a {
           color: $black;
@@ -67,6 +91,9 @@
           border-bottom: 2px solid $black;
           padding-bottom: 8px;
           white-space: nowrap;
+          @media (max-width: $layout-breakpoint-small) {
+            padding-bottom: 4px;
+          }
           @media (max-width: $layout-breakpoint-xsmall) {
             border: none;
           }
@@ -88,6 +115,7 @@
         @media (min-width: $layout-breakpoint-medium) {
           display: none;
         }
+
         span {
           width: 20px;
           height: 3px;

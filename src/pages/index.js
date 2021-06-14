@@ -35,9 +35,18 @@ const IndexPage = () => {
                 />
               </motion.div>
             </div>
-            <div style={{ marginBottom: "10vh" }}>
+            <HomeContent />
+            {/* <div className="home-services-grid container" style={{ marginBottom: "10vh" }}>
               <HomeContent />
-            </div>
+              <StaticImage
+                src="../images/home-page-services.jpg"
+                alt="Home page services image"
+                placeholder="blurred"
+                layout="fullWidth"
+                loading="blurred"
+                transformOptions={{ grayscale: true }}
+              />
+            </div> */}
           </>
         </AnimatePresence>
       </AnimateSharedLayout>

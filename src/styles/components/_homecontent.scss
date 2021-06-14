@@ -1,7 +1,5 @@
 .home-content-section {
-  margin-top: 4vh !important;
-  // margin-bottom: 20vh !important;
-  top: 50%;
+ height: 40vh;
   width: 100%;
   padding: 20px 20px;
 
@@ -18,7 +16,7 @@
   }
   .copy {
     text-align: left;
-    max-width: 50vw;
+    max-width: 35vw;
     margin-top: 12px;
     font-weight: 400;
     font-size: 1.6rem;
@@ -33,10 +31,9 @@
   }
   .list {
     margin: 0 1vw ;
-}
+  }
   li::before{
     content: '-';
   } 
 }
-
 

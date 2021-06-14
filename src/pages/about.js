@@ -25,8 +25,10 @@ const AboutPage = () => {
               for a multitude of great clients. We strive to “make it work with
               your budget”. Reaching a happy common ground and delivering you
               the best product we can is our goal, and mission. Below are some
-              highlights of our most recent work!
+              highlights of our most recent work! <br/>
+              <a className="ig" href="https://instagram.com/obeliskstudios.ca/" target="_blank" rel="noreferrer">Instagram</a>
             </p>
+            
           </div>
         </motion.div>
       </main>

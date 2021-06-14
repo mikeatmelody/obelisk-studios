@@ -12,11 +12,12 @@
 @import "./components/banner";
 @import "./components/header";
 @import "./components/layout";
-@import "./components/loader";
+// @import "./components/loader";
 @import "./components/marquee";
 @import "./components/homecontent";
 @import "./components/footer";
-
+@import "./components/menu";
+@import "./components/loading";
 // pages
 @import "./pages/contact";
 @import "./pages/top-picks";

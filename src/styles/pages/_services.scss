@@ -11,9 +11,15 @@
 
   .grid-item-1 {
     grid-column: 1;
+    @media (max-width: $layout-breakpoint-small) {
+      margin-bottom: 12px;
+    }
   }
   .grid-item-2 {
     grid-column: 2;
+    @media (max-width: $layout-breakpoint-small) {
+      margin-top: 12px;
+    }
   }
 
   h1 {

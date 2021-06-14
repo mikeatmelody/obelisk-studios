@@ -29,11 +29,11 @@ const ServicesPage = () => {
             </div>
             <div className="grid-item-2">
               <StaticImage
-                src="../images/services.jpg"
+                src="../images/OBL Filler 7 1.jpg"
                 alt="Services Image"
                 layout="fullWidth"
                 aspectRatio={16 / 9}
-                transformOptions={{ grayscale: true }}
+                // transformOptions={{ grayscale: true }}
               />
             </div>
           </div>

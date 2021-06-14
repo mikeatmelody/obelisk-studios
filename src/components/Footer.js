@@ -28,10 +28,9 @@ const Footer = () => {
           transition: {
             duration: 0.6,
             ease: [0.6, 0.05, -0.01, 0.9],
-            delay: 3,
           },
         },
-        hidden: { opacity: 0, y: 72 },
+        hidden: { opacity: 0, y: 20 },
       }}
     >
       <div className="content container">

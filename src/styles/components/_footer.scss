@@ -7,6 +7,8 @@
     text-align: center;
     color: $black;
     @media (max-width: $layout-breakpoint-small) {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
         height: 20vh;
        }
 

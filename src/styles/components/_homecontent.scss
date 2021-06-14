@@ -2,6 +2,10 @@
  height: 40vh;
   width: 100%;
   padding: 20px 20px;
+  @media (max-width: $layout-breakpoint-small) {
+  margin-bottom: 20vh;
+  font-size: 16px;
+  }
 
 
   h1 {
@@ -20,16 +24,22 @@
     margin-top: 12px;
     font-weight: 400;
     font-size: 1.6rem;
+    
 
     @media (max-width: $layout-breakpoint-small) {
       width: 100%;
       max-width: 100%;
+      font-size: 16px;
     }
     @media (max-width: $layout-breakpoint-xsmall) {
+      font-size: 16px;
     }
   }
   .list {
     margin: 0 1vw ;
+    @media (max-width: $layout-breakpoint-small) {
+      font-size: 15px;
+    }
   }
   li::before{
     content: '-';

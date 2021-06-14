@@ -12,6 +12,7 @@ import Footer from "../components/Footer";
 
 //styles
 import "../styles/index.scss";
+
 const Layout = ({ children, location }) => {
   const [finishLoading, setFinishLoading] = useState(true);
 
@@ -104,14 +105,16 @@ const Layout = ({ children, location }) => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-        {/* <div className="layout-styles"> */}
+
           <Header setMenuState={setMenuState} />
           <Menu menuState={menuState} setMenuState={setMenuState} />
+          <div>
           <main className="content-wrap">
             {children}
           </main>
           <Footer />
-        {/* </div> */}
+          </div>
+
         </motion.div>
         )}
         </AnimatePresence>

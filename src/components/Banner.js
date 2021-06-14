@@ -120,10 +120,10 @@ const BannerRowCenter = ({ title, playMarquee }) => {
         animate={{ y: 0 }}
         transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 3 }}
         className='marquee__inner'>
-        <AnimatedLetters key="al-1" title={title} disabled />
-        <AnimatedLetters key="al-2" title={title} />
-        <AnimatedLetters key="al-3" title={title} disabled />
-        <AnimatedLetters key="al-4" title={title} disabled />
+        <AnimatedLetters key="al-1-2" title={title} disabled />
+        <AnimatedLetters key="al-2-2-3" title={title} />
+        <AnimatedLetters key="al-3-3-5" title={title} disabled />
+        <AnimatedLetters key="al-4-5-6" title={title} disabled />
       </motion.div>
     </div>
   );

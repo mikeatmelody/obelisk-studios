@@ -2,18 +2,17 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background: $black;
-    z-index: 999;
+    background: $background;
+    z-index: 998;
     overflow: hidden;
     .close {
       z-index: 1000;
       position: absolute;
-      color: $white;
+      color: $black;
       top: 3.3rem;
       right: 2rem;
       display: flex;
       align-items: center;
-      text-transform: uppercase;
       font-size: 0.875rem;
       letter-spacing: 0.05rem;
       cursor: pointer;
@@ -25,25 +24,25 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100%;
+      height: 100vh;
       ul {
         text-align: center;
         li {
           margin: 3rem;
-          color: $white;
+          color: $black;
           position: relative;
         //   overflow: hidden;
           @media (max-width: 480px) {
-            margin: 2rem;
+            margin: 4rem;
           }
           a {
-            color: $white;
+            color: $black;
           }
           span {
             @media (max-width: 480px) {
               font-size: 2rem;
             }
-            font-size: 2rem;
+            font-size: 4rem;
             color: $white;
             margin: 0 auto;
             font-weight: 300;

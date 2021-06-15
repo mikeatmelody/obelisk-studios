@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, {useState, useEffect} from "react";
 import PropTypes from "prop-types";
 
 import { motion, AnimatePresence } from "framer-motion";
 //Hooks
-import useWindowSize from "../hooks/useWindowSize";
+// import useWindowSize from "../hooks/useWindowSize";
 //components
 import Loading from "../components/loading";
 import Header from "../components/Header";
@@ -13,62 +13,62 @@ import Footer from "../components/Footer";
 //styles
 import "../styles/index.scss";
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children }) => {
   const [finishLoading, setFinishLoading] = useState(true)
 
-  //Hook to grab window size
-  const size = useWindowSize()
+  // //Hook to grab window size
+  // const size = useWindowSize()
 
-  // Ref for parent div and scrolling div
-  const app = useRef()
-  const scrollContainer = useRef()
+  // // Ref for parent div and scrolling div
+  // const app = useRef()
+  // const scrollContainer = useRef()
 
-  // Configs
-  const data = {
-    ease: 0.1,
-    current: 0,
-    previous: 0,
-    rounded: 0,
-    height: 0,
-  }
+  // // Configs
+  // const data = {
+  //   ease: 0.1,
+  //   current: 0,
+  //   previous: 0,
+  //   rounded: 0,
+  //   height: 0,
+  // }
 
-  // Run scrollrender once page is loaded.
-  useEffect(() => {
-    requestAnimationFrame(() => skewScrolling())
-  }, [])
+  // // Run scrollrender once page is loaded.
+  // useEffect(() => {
+  //   requestAnimationFrame(() => skewScrolling())
+  // }, [])
 
-  //Set the height of the body to the height of the scrolling div
-  const setBodyHeight = () => {
-    document.body.style.height = `${
-      scrollContainer.current.getBoundingClientRect().height
-    }px`
-  }
+  // //Set the height of the body to the height of the scrolling div
+  // const setBodyHeight = () => {
+  //   document.body.style.height = `${
+  //     scrollContainer.current.getBoundingClientRect().height
+  //   }px`
+  // }
 
-  const [state, setState] = useState({
-    scroll: 0,
-    skew: 0,
-  })
+  // const [state, setState] = useState({
+  //   scroll: 0,
+  //   skew: 0,
+  // })
 
-  // Scrolling
-  const skewScrolling = () => {
-    //Set Current to the scroll position amount
-    data.current = window.scrollY
-    // Set Previous to the scroll previous position
-    data.previous += (data.current - data.previous) * data.ease
-    // Set rounded to
-    data.rounded = Math.round(data.previous * 100) / 100
+  // // Scrolling
+  // const skewScrolling = () => {
+  //   //Set Current to the scroll position amount
+  //   data.current = window.scrollY
+  //   // Set Previous to the scroll previous position
+  //   data.previous += (data.current - data.previous) * data.ease
+  //   // Set rounded to
+  //   data.rounded = Math.round(data.previous * 100) / 100
 
-    // Difference between
-    const difference = data.current - data.rounded
-    const acceleration = difference / size.width
-    const velocity = +acceleration
-    const skew = velocity * 7.5
+  //   // Difference between
+  //   const difference = data.current - data.rounded
+  //   const acceleration = difference / size.width
+  //   const velocity = +acceleration
+  //   const skew = velocity * 7.5
 
-    //Assign skew and smooth scrolling to the scroll container
-    setState({ scroll: data.rounded, skew: skew, height: data.height })
-    //loop vai raf
-    requestAnimationFrame(() => skewScrolling())
-  }
+  //   //Assign skew and smooth scrolling to the scroll container
+  //   setState({ scroll: data.rounded, skew: skew, height: data.height })
+  //   //loop vai raf
+  //   requestAnimationFrame(() => skewScrolling())
+  // }
 
   useEffect(() => {
     setTimeout(() => {
@@ -76,10 +76,10 @@ const Layout = ({ children, location }) => {
     }, 3000)
   }, [])
 
-  //set the height of the body.
-  useEffect(() => {
-    setBodyHeight()
-  }, [size, finishLoading, location])
+  // //set the height of the body.
+  // useEffect(() => {
+  //   setBodyHeight()
+  // }, [size, finishLoading, location])
 
   const [menuState, setMenuState] = useState(false)
 
@@ -90,14 +90,14 @@ const Layout = ({ children, location }) => {
   }, [menuState])
 
   return (
-    <motion.div exit={{ opacity: 0 }} ref={app} className="app">
-      <div
+    <motion.div>
+      {/* <div
         style={{
           transform: `translate3d(0, -${state.scroll}px, 0) skewY(${state.skew}deg)`,
         }}
         ref={scrollContainer}
         className="smooth-scroll"
-      >
+      > */}
         <AnimatePresence>
           {finishLoading ? (
             <Loading key={"home2"} />
@@ -116,7 +116,7 @@ const Layout = ({ children, location }) => {
             </motion.div>
           )}
         </AnimatePresence>
-      </div>
+      {/* </div> */}
     </motion.div>
   );
 };

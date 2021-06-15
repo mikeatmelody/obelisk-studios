@@ -15,6 +15,7 @@ module.exports = {
     title: "Obelisk Studios",
     author: "Mike at Melody Digital",
     siteUrl: URL,
+    keywords: "wholesale clothing, garments, merch, merchandise, screenprint, tshirt, hoodies, hats, clothing, highquality, directtogarment, screenprinting, screenprinter, clothingbrand, customgarments, embroidery, smallbusiness, dtg, printing, Custom logo, custom brand, custom design, design, merch, merchandise, custom merch,"
   },
   plugins: [
     {

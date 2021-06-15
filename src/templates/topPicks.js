@@ -39,7 +39,7 @@ const TopPicksTemplate = ({ data: { item } }) => {
 
   // const Bold = ({ children }) => <span className="bold">{children}</span>
   // const Text = ({ children }) => <p className="align-center">{children}</p>
-  const description = item.hyperLink.raw;
+  // const description = item.hyperLink.raw;
   // console.log(description);
   // const options = {
 
@@ -47,8 +47,8 @@ const TopPicksTemplate = ({ data: { item } }) => {
   // const output = renderRichText(description, options)
   return (
     <>
-      <main className="container">
-        <div className="top-picks">
+      <main>
+        <div className="top-picks container">
           <div className="thumbnail-image">
             
             <GatsbyImage image={image} alt={item.thumbnailImage.title} />

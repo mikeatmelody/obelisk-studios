@@ -41,7 +41,8 @@ const TShirtTemplate = ({ data: { allItems } }) => {
   };
   return (
     <>
-      <main className="products-title container">
+      <main>
+        <div className="products-title container">
         <h1>{pageName.name}</h1>
         <Link to="/top-picks">Top Picks</Link>
         <div className="products-grid">
@@ -61,6 +62,7 @@ const TShirtTemplate = ({ data: { allItems } }) => {
               </div>
             </Link>
           ))}
+        </div>
         </div>
       </main>
     </>

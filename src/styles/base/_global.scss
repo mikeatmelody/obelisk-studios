@@ -13,8 +13,12 @@
     background-color: $background;
     color: $black;
     // overflow-x: hidden;
-    // overscroll-behavior-y: none;
+    overscroll-behavior-y: none;
     line-height: 1.5 !important;
+  }
+
+  main {
+    height: 100%;
   }
   
   h1,
@@ -112,7 +116,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    // overflow: hidden;
+    overflow: hidden;
   
     .smooth-scroll {
       padding-bottom: 2rem;
@@ -144,7 +148,7 @@
   }
   
   .body-lock {
-    // overflow-y: hidden;
+    overflow-y: hidden;
   }
 
 

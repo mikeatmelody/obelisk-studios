@@ -40,7 +40,7 @@ const TopPicksTemplate = ({ data: { item } }) => {
   // const Bold = ({ children }) => <span className="bold">{children}</span>
   // const Text = ({ children }) => <p className="align-center">{children}</p>
   const description = item.hyperLink.raw;
-  console.log(description);
+  // console.log(description);
   // const options = {
 
   // }

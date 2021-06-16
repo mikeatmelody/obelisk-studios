@@ -9,16 +9,19 @@
 @import "./base/typography";
 @import "./base/normalize";
 
+
 // components
 @import "./components/banner";
-@import "./components/header";
-@import "./components/layout";
-// @import "./components/loader";
 @import "./components/marquee";
 @import "./components/homecontent";
 @import "./components/footer";
-@import "./components/menu";
 @import "./components/loading";
+
+@import "./components/burger";
+@import "./components/navbar";
+@import "./components/rightnav";
+
+
 // pages
 @import "./pages/contact";
 @import "./pages/top-picks";

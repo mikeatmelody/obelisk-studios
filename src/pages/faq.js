@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import { motion } from "framer-motion";
 
 const FAQPage = () => {
@@ -7,7 +6,6 @@ const FAQPage = () => {
     <>
       <main className="container">
         <title>FAQ</title>
-        <Link className="link" to="/">Go home</Link>.
         <div className="faq">
         
           <motion.h1

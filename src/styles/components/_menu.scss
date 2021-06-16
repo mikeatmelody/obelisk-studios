@@ -1,0 +1,53 @@
+.menu {
+    position: absolute;
+    height: 100% !important;
+    width: 100% !important;
+    background: $background;
+    z-index: 1000;
+    overflow: hidden;
+    .close {
+      z-index: 1000;
+      position: absolute;
+      color: $black;
+      top: 3.3rem;
+      right: 2rem;
+      display: flex;
+      align-items: center;
+      font-size: 0.875rem;
+      letter-spacing: 0.05rem;
+      cursor: pointer;
+      svg {
+        height: 18px;
+      }
+    }
+    .menu-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    //   height: 100vh;
+      ul {
+        text-align: center;
+        li {
+          margin: 3rem;
+          color: $black;
+          position: relative;
+          overflow: hidden;
+          @media (max-width: 480px) {
+            margin: 4rem;
+          }
+          a {
+            color: $black;
+          }
+          span {
+            @media (max-width: 480px) {
+              font-size: 2rem;
+            }
+            font-size: 4rem;
+            color: $white;
+            margin: 0 auto;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }

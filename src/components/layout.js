@@ -6,11 +6,10 @@ import { motion, AnimatePresence } from "framer-motion";
 
 //components
 import Loading from "../components/loading";
-// import Header from "../components/Header";
-import NavBar from "../components/Nav/NavBar"
+import Header from "./Header";
+import Menu from "../components/menu";
 
 import Footer from "../components/Footer";
-
 
 //styles
 import "../styles/index.scss";
@@ -24,6 +23,8 @@ const Layout = ({ children }) => {
     }, 3000);
   }, []);
 
+  const [menuState, setMenuState] = useState(false);
+
   return (
     <motion.div>
       <AnimatePresence>
@@ -35,7 +36,8 @@ const Layout = ({ children }) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <NavBar />
+            <Header setMenuState={setMenuState} />
+            <Menu menuState={menuState} setMenuState={setMenuState} />
 
             <div>
               <main>{children}</main>

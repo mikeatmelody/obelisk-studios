@@ -37,6 +37,9 @@ const Header = ({ menuState, setMenuState}) => {
           <li>
             <Link activeClassName="active" to="/brands">Brands</Link>
           </li>
+          <li>
+            <Link activeClassName="active" to="/faq">FAQ</Link>
+          </li>
         </nav>
         <div className="contact">
           <a href="/contact">Let's work together</a>

@@ -30,7 +30,7 @@ const Menu = ({ setMenuState, menuState }) => {
             >
               CLOSE <Close />
             </motion.div>
-            <div className="container">
+            {/* <div className="container"> */}
               <motion.div className="menu-inner">
                 <motion.ul>
                   <li>
@@ -82,6 +82,32 @@ const Menu = ({ setMenuState, menuState }) => {
                       exit={{ y: 300, skewY: 40 }}
                       transition={{ delay: 0.2, ...transition }}
                     >
+                        <Link to="/brands">Brands</Link>
+                    </motion.span>
+                  </li>
+                  <li>
+                    <motion.span
+                      initial={{ y: 300, skewY: 40 }}
+                      animate={{
+                        y: 0,
+                        skewY: 0,
+                      }}
+                      exit={{ y: 300, skewY: 40 }}
+                      transition={{ delay: 0.2, ...transition }}
+                    >
+                        <Link to="/faq">FAQ</Link>
+                    </motion.span>
+                  </li>
+                  <li>
+                    <motion.span
+                      initial={{ y: 300, skewY: 40 }}
+                      animate={{
+                        y: 0,
+                        skewY: 0,
+                      }}
+                      exit={{ y: 300, skewY: 40 }}
+                      transition={{ delay: 0.2, ...transition }}
+                    >
                         <Link to="/contact">Let's work together</Link>
                     </motion.span>
                   </li>
@@ -100,7 +126,7 @@ const Menu = ({ setMenuState, menuState }) => {
                   </li>
                 </motion.ul>
               </motion.div>
-            </div>
+            {/* </div> */}
           </motion.div>
         )}
       </AnimatePresence>

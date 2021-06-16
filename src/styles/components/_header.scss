@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     padding: 0 108px;
-    
+
 
     color: $black;
 
@@ -57,7 +57,7 @@
       }
       .contact {
         @media (max-width: $layout-breakpoint-medium) {
-          flex: 1;
+          display: none;
          
         }
         @media (max-width: $layout-breakpoint-large) {

@@ -2,9 +2,19 @@
     position: absolute;
     height: 100% !important;
     width: 100% !important;
+    top: 0;
     background: $background;
     z-index: 1000;
-    overflow: hidden;
+    overflow-y: hidden !important;
+    // .menu::-webkit-scrollbar {
+    //     display: none;
+    //   }
+      
+    //   /* Hide scrollbar for IE, Edge and Firefox */
+    //   .menu {
+    //     -ms-overflow-style: none;  /* IE and Edge */
+    //     scrollbar-width: none;  /* Firefox */
+    //   }
     .close {
       z-index: 1000;
       position: absolute;
@@ -16,15 +26,20 @@
       font-size: 0.875rem;
       letter-spacing: 0.05rem;
       cursor: pointer;
+   
       svg {
         height: 18px;
       }
     }
+
     .menu-inner {
       display: flex;
       align-items: center;
       justify-content: center;
-    //   height: 100vh;
+      height: 100vh;
+      @media (max-width: $layout-breakpoint-medium) {
+        overflow: hidden;
+      }
       ul {
         text-align: center;
         li {

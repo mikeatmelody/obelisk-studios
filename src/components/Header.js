@@ -48,10 +48,9 @@ const Header = ({ menuState, setMenuState}) => {
         onClick={() => setMenuState(!menuState)} 
         onKeyPress={() => setMenuState(!menuState)} 
         className="hamburger-menu"
-        role="menuitem"
-        tabIndex="0">
-          <span></span>
-          <span></span>
+        role="tablist">
+          <span role="tab" aria-selected="false" aria-controls="tab-1-pane"></span>
+          <span role="tab" aria-selected="false" aria-controls="tab-2-pane"></span>
         </div>
       </header>
     </motion.div>
@@ -59,3 +58,15 @@ const Header = ({ menuState, setMenuState}) => {
 };
 
 export default Header;
+
+<div role="tablist">
+	<button role="tab" aria-selected="true" aria-controls="tab-1-pane" active>
+		Tab 1
+	</button>
+	<button role="tab" aria-selected="false" tabindex="-1" aria-controls="tab-2-pane">
+		Tab 2
+	</button>
+	<button role="tab" aria-selected="false" tabindex="-1" aria-controls="tab-3-pane">
+		Tab 3
+	</button>
+</div>

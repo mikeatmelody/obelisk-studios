@@ -7,7 +7,7 @@ const ContactPage = () => {
   return (
     <>
       <SEO title="Contact" />
-      <main className="container">
+      <main>
         <title>Contact Us</title>
 
         <motion.div

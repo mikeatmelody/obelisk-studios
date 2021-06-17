@@ -1,6 +1,6 @@
 .contact-section {
   text-align: center;
-  padding: 20px 20vw;
+  margin: 0 1em;
   // min-height: 40vh;
 
   @media (max-width: $layout-breakpoint-large) {
@@ -10,13 +10,13 @@
   }
 
   @media (max-width: $layout-breakpoint-medium) {
-    margin-left: 0;
-    margin-right: 0;
+    // margin-left: 0;
+    // margin-right: 0;
   }
 
   @media (max-width: $layout-breakpoint-small) {
     display: block;
-    padding: 10px;
+    // padding: 10px;
   }
   @media (max-width: $layout-breakpoint-medium) {
     display: block;
@@ -48,14 +48,17 @@
       font-size: 1.4rem;
       padding: 0;
     }
+    @media (max-width: $layout-breakpoint-large) {
+      margin: 0 10vw;
+    }
   }
   .email {
-    padding: 20px 20px;
+    // padding: 20px 20px;
     margin-bottom: 2vw;
   }
   .form-section {
     margin-top: 2vw;
-    margin-bottom: 6vw;
+    // margin-bottom: 6vw;
     input,
     textarea {
       margin-left: 10px;

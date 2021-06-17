@@ -30,7 +30,7 @@ const HomeContent = () => {
         hidden: { opacity: 0, y: 72 },
       }}
     >
-      <div className="home-content-section container">
+      <div className="home-content-section">
         <h1>Services</h1>
         <div className="copy">
           Obelisk Studios is a multi-faceted print shop that specializes in

@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { motion } from 'framer-motion'
 
+
 // run template query
 export const query = graphql`
   {
@@ -37,8 +38,9 @@ export const query = graphql`
 const PantsTemplate = ({ data: { allItems } }) => {
   const products = allItems.nodes;
   const pageName = {
-    name: "Pants"
+    name: "Sweatpants"
 }
+
   return (
     <>
       <main className="products-title container">

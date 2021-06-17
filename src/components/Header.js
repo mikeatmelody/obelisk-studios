@@ -44,8 +44,12 @@ const Header = ({ menuState, setMenuState}) => {
         <div className="contact">
           <a href="/contact">Let's work together</a>
         </div>
-        <div onClick={() => setMenuState(!menuState)} 
-        className="hamburger-menu">
+        <div 
+        onClick={() => setMenuState(!menuState)} 
+        onKeyPress={() => setMenuState(!menuState)} 
+        className="hamburger-menu"
+        role="menuitem"
+        tabIndex="0">
           <span></span>
           <span></span>
         </div>

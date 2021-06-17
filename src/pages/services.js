@@ -11,7 +11,7 @@ const ServicesPage = () => {
     <>
       <SEO title="Services" />
 
-      <main className="container">
+      <main>
         <title>Services</title>
 
         <motion.div
@@ -23,19 +23,21 @@ const ServicesPage = () => {
             delay: 1.6,
           }}
         >
-          <div className="services">
-            <div className="grid-item-1">
+          <div className="services container">
+
+              <div className="left-wrap">
               <HomeContent />
-            </div>
-            <div className="grid-item-2">
+              </div>
+              <div className="right-wrap">
               <StaticImage
                 src="../images/OBL Filler 7 1.jpg"
                 alt="Services Image"
+                // width={600}
                 layout="fullWidth"
                 aspectRatio={16 / 9}
                 // transformOptions={{ grayscale: true }}
               />
-            </div>
+              </div>
           </div>
         </motion.div>
       </main>

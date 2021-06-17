@@ -1,18 +1,20 @@
 .home-content-section {
- height: 40vh;
+//  height: 40vh;
   width: 100%;
-  padding: 20px 20px;
+  // padding: 20px 20px;
   @media (max-width: $layout-breakpoint-small) {
   font-size: 16px;
   }
   @media (max-width: $layout-breakpoint-medium) {
     display: inline-block;
+    margin: 0;
     }
 
 
   h1 {
     font-size: 2.7rem;
     font-weight: 600;
+    max-width: 100px;
   }
   h2 {
       font-size: 2rem;
@@ -22,7 +24,7 @@
   }
   .copy {
     text-align: left;
-    max-width: 80%;
+    max-width: 60%;
     margin-top: 12px;
     font-weight: 400;
     font-size: 1.6rem;

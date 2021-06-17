@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 export const query = graphql`
   {
     allItems: allContentfulTopPicks(
-      filter: { contentType: { eq: "Hats" } }
+      filter: { contentType: { eq: "bags-and-hats" } }
     ) {
       nodes {
         contentType
@@ -37,7 +37,7 @@ export const query = graphql`
 const BagsAndHatsTemplate = ({ data: { allItems } }) => {
   const products = allItems.nodes;
   const pageName = {
-    name: "Hats & Bags"
+    name: "Bags & Hats"
 }
   return (
     <>

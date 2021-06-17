@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 // import { BLOCKS } from "@contentful/rich-text-types"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Link } from 'gatsby'
 
 // run template query
 
@@ -33,7 +34,7 @@ export const query = graphql`
   }
 `;
 
-const TopPicksTemplate = ({ data: { item } }) => {
+const TopPicksTemplate = ({ data: { item }, location }) => {
   const image = getImage(item.thumbnailImage);
   const hoverImage = getImage(item.hoverImage);
   const description = item.hyperLink;
@@ -42,12 +43,33 @@ const TopPicksTemplate = ({ data: { item } }) => {
   // }
 
 
+
+// const PrevPage = () => (
+//   <div>
+//     <Link
+//       to={`/nextpage`}
+//       state={{ prevPath: location.pathname }}
+//     >
+//       Next Page
+//     </Link>
+//   </div>
+// )
+
+// const NextPage = (props) => (
+//   <div>
+//     <p>previous path is: {props.location.state.prevPath}</p>
+//   </div>
+// );
+
+
   const output = renderRichText(description)
   return (
     <>
       <main>
+        {/* <Link to={location.prevPath}>Prev</Link> */}
+      <h2 style={{fontSize: "20px", fontWeight: 600}} className="tp-title container">{item.title}</h2>
         <div className="top-picks container">
-        <h2 className="tp-title">{item.title}</h2>
+        
           <div className="thumbnail-image">
             <GatsbyImage image={image} alt={item.thumbnailImage.title} />
           </div>

@@ -9,7 +9,6 @@
   }
   
   body {
-    height: 100%;
     font-size: 16px;
     background-color: $background;
     color: $black;
@@ -18,9 +17,18 @@
   }
 
   main {
-    // height: 100%;
+
     overflow-x: hidden;
     overflow-y: hidden;
+    main::-webkit-scrollbar {
+        display: none;
+      }
+      
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .main{
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
 
   }
   
@@ -115,7 +123,7 @@
     margin: 0 auto;
     padding: 0 32px;
     position: relative;
-    max-width: 91.66vw;
+    max-width: 90.66vw;
     width: 100%;
     &.fluid {
       padding: 0;

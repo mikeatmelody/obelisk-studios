@@ -25,6 +25,12 @@ const letterAni = {
 const Banner = () => {
   const [playMarquee, setPlayMarquee] = useState(false);
 
+  const BannerRowLong = [
+    "Premium Blanks",
+    "Embroidery",
+    "Screen Printing"
+  ]
+
   useEffect(() => {
     setTimeout(() => {
       setPlayMarquee(true);
@@ -33,7 +39,7 @@ const Banner = () => {
   return (
     <motion.div className='banner' variants={banner}>
       <BannerRowTop title={"Obelisk"} />
-      <BannerRowCenter title={"Premium Blanks, Embroidery, & Screen Printing"} playMarquee={playMarquee} />
+      <BannerRowCenter title={(BannerRowLong.join())} playMarquee={playMarquee} />
       <BannerRowBottom title={"Studios"} />
     </motion.div>
   );
@@ -45,10 +51,11 @@ const AnimatedLetters = ({ title, disabled }) => (
     variants={disabled ? null : banner}
     initial='initial'
     animate='animate'>
-    {[...title].map((letter) => (
+    {[...title].map((letter, i) => (
       <motion.span
         className='row-letter'
-        variants={disabled ? null : letterAni}>
+        variants={disabled ? null : letterAni}
+        key={i}>
         {letter}
       </motion.span>
     ))}

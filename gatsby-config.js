@@ -5,7 +5,7 @@ require("dotenv").config({
 
 let URL;
 if (process.env.NODE_ENV === "production") {
-  URL = "https://obelisk-studios-demo.netlify.app";
+  URL = "https://obeliskstudios.ca";
 } else {
   URL = "http://localhost:8000";
 }

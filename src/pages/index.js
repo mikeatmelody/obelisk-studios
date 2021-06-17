@@ -35,7 +35,10 @@ const IndexPage = () => {
                 />
               </motion.div>
             </div>
+            <div className="container">
             <HomeContent />
+            </div>
+         
             {/* <div className="home-services-grid container" style={{ marginBottom: "10vh" }}>
               <HomeContent />
               <StaticImage

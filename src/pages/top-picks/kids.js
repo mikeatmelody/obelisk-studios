@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 export const query = graphql`
   {
     allItems: allContentfulTopPicks(
-      filter: { contentType: { eq: "Kids" } }
+      filter: { contentType: { eq: "kids" } }
     ) {
       nodes {
         contentType

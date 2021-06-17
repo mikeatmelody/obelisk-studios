@@ -4,7 +4,7 @@
   }
 
   @media (max-width: $layout-breakpoint-medium) {
-    text-align: left;
+    // text-align: l;
   }
 
   @media (max-width: $layout-breakpoint-small) {
@@ -26,18 +26,23 @@
     margin: 1vw 0;
     @media (max-width: $layout-breakpoint-medium) {
         text-align: center;
-        margin: 1vw 0;
       }
   }
   h2 {
     font-size: 2rem;
     font-weight: 500;
     margin: 1vw 0;
+    @media (max-width: $layout-breakpoint-medium) {
+      margin: 1em;
+    }
     
   }
   p {
     margin: 1vh 2vw;
     color: #3c3c43;
+    @media (max-width: $layout-breakpoint-medium) {
+      margin: 1em;
+    }
   }
 }
 

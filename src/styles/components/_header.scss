@@ -34,6 +34,9 @@
           font-size: 1.6rem;
           flex: 4;
         }
+        @media (max-width: $layout-breakpoint-small) {
+          margin: 2em;
+        }
       }
       .nav {
         @media (max-width: $layout-breakpoint-medium) {

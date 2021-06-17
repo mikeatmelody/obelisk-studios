@@ -1,10 +1,15 @@
 .top-picks {
   .text-grid {
     text-align: center;
-    // margin: 4.66vw;
+    @media (max-width: $layout-breakpoint-small) {
+    text-align: center;
+    font-size: 16px;
+    margin: 12vw;
+
+    }
 
     h1 {
-      font-size: 2.7rem;
+      font-size: 16px;
       font-weight: 600;
       z-index: 1;
       color: $black;

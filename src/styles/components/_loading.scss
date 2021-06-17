@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: absolute;
     z-index: 99;
@@ -14,16 +14,28 @@
     }
     .progress {
       position: absolute;
-      bottom: 8rem;
-      left: 8rem;
+      top: 4rem;
+      left: 4rem;
       font-size: 3rem;
-      @media (max-width: 1024px) {
-        bottom: 3rem;
-        left: 3rem;
-      }
-      @media (max-width: 480px) {
-        bottom: 3rem;
-        left: 1.5rem;
-      }
+      // @media (max-width: $layout-breakpoint-large) {
+       
+      // }
+      // @media (max-width: $layout-breakpoint-medium) {
+       
+      // }
+      // @media (max-width: $layout-breakpoint-small) {
+       
+      // }
+      // @media (max-width: $layout-breakpoint-xsmall) {
+       
+      // }
+      // @media (max-width: 1024px) {
+      //   bottom: 1rem;
+      //   left: 3rem;
+      // }
+      // @media (max-width: 480px) {
+      //   bottom: 1rem;
+      //   left: 1.5rem;
+      // }
     }
   }

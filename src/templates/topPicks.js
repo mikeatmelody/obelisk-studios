@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
-// import { BLOCKS, MARKS, Text } from "@contentful/rich-text-types"
-// import { renderRichText } from "gatsby-source-contentful/rich-text"
+// import { BLOCKS } from "@contentful/rich-text-types"
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 // run template query
@@ -17,11 +17,11 @@ export const query = graphql`
       }
       thumbnailImage {
         title
-        gatsbyImageData(width: 500, placeholder: BLURRED)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
       }
       hoverImage {
         title
-        gatsbyImageData(width: 500, placeholder: BLURRED)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
       }
     }
 
@@ -36,27 +36,25 @@ export const query = graphql`
 const TopPicksTemplate = ({ data: { item } }) => {
   const image = getImage(item.thumbnailImage);
   const hoverImage = getImage(item.hoverImage);
-
-  // const Bold = ({ children }) => <span className="bold">{children}</span>
-  // const Text = ({ children }) => <p className="align-center">{children}</p>
-  // const description = item.hyperLink.raw;
-  // console.log(description);
+  const description = item.hyperLink;
   // const options = {
 
   // }
-  // const output = renderRichText(description, options)
+
+
+  const output = renderRichText(description)
   return (
     <>
       <main>
         <div className="top-picks container">
+        <h2 className="tp-title">{item.title}</h2>
           <div className="thumbnail-image">
-            
             <GatsbyImage image={image} alt={item.thumbnailImage.title} />
-
-            <h2 className="tp-title">{item.title}</h2>
-            <GatsbyImage image={hoverImage} alt={item.hoverImage.title} />
           </div>
-          {/* <div><Bold>{output}</Bold></div> */}
+          <div className="hover-image">
+          <GatsbyImage image={hoverImage} alt={item.hoverImage.title} />
+          </div>
+          <div className="styled-list">{output}</div>
         </div>
       </main>
     </>

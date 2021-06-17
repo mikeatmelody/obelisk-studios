@@ -8,7 +8,7 @@ const TopPicksPage = () => {
   return (
     <>
       <SEO title="Top Picks" />
-      <main className="top-picks container">
+      <main className="top-picks container fluid">
         <motion.div
           initial={{ opacity: 0, y: -60 }}
           animate={{ opacity: 1, y: 0 }}

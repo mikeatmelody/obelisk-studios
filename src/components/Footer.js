@@ -8,7 +8,7 @@ const Footer = () => {
   const animation = useAnimation();
   const [footerRef, inView] = useInView({
     triggerOnce: true,
-    rootMargin: "-100px",
+    rootMargin: "0px",
   });
   useEffect(() => {
     if (inView) {

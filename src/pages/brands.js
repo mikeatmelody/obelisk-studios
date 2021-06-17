@@ -1,6 +1,8 @@
 import * as React from "react";
+// import { Link } from "gatsby"
 import { motion } from "framer-motion";
 import SEO from "../components/seo";
+import { StaticImage } from "gatsby-plugin-image";
 
 const BrandsPage = () => {
   return (
@@ -59,6 +61,15 @@ const BrandsPage = () => {
               <li>BURNSIDE APPAREL</li>
               <li>RABBIT SKINS</li>
             </ul>
+            {/* <div className="catalog-banner">
+            <StaticImage
+              src="../images/pexels-tembela-bohle-1884583.jpg"
+              alt="Catalog Backdrop Image"
+              layout="fullWidth"
+              aspectRatio={21 / 9}
+              transformOptions={{ grayscale: true }}
+            />
+            </div> */}
           </div>
         </motion.div>
       </main>

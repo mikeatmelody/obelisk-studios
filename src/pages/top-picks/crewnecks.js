@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 export const query = graphql`
   {
     allItems: allContentfulTopPicks(
-      filter: { contentType: { eq: "Crewnecks" } }
+      filter: { contentType: { eq: "crewnecks" } }
     ) {
       nodes {
         contentType
@@ -42,7 +42,7 @@ const CrewnecksTemplate = ({ data: { allItems } }) => {
     <>
       <main className="products-title container">
       <h1>{pageName.name}</h1>
-          <Link to="/top-picks">Top Picks</Link>
+          <Link to="/top-picks" style={{fontSize: '20px', fontWeight: 600, textDecoration: 'underline', textTransform: 'capitalize'}}>Top Picks</Link>
           <div className="products-grid">
         {products.map((product) => (
               <Link key={product.title} to={`/top-picks/${product.contentType}/${product.slug}`}>

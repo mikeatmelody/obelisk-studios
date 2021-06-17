@@ -26,14 +26,6 @@ const ContactPage = () => {
             have. You can expect a fast reply. We're happy to answer any and all
             questions and can easily provide mockups at your request.
           </p>
-          {/* <p>
-            <a className="email" href="mailto:tom@obeliskstudios.ca">
-              tom@obeliskstudios.ca
-            </a>
-            <a className="phone" href="tel:6043696472">
-              604-369-6472
-            </a>
-          </p> */}
           <form 
           name="contact" 
           method="POST" 

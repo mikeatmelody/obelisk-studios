@@ -9,7 +9,7 @@
     .brand-titles {
       color: $black;
       display: grid;
-      grid-template-columns: repeat(2, 20vw);
+      grid-template-columns: repeat(2, 1fr);
       font-size: 2rem;
       margin: 4vw;
       gap:40px;
@@ -29,6 +29,7 @@
       .left-col {
         z-index: 1;
         grid-column: 1;
+        display: inline-block;
       }
       .right-col {
         z-index: 1;

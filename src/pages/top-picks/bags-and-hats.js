@@ -43,7 +43,7 @@ const BagsAndHatsTemplate = ({ data: { allItems } }) => {
     <>
       <main className="products-title container">
       <h1>{pageName.name}</h1>
-          <Link to="/top-picks">Top Picks</Link>
+          <Link to="/top-picks" style={{fontSize: '20px', fontWeight: 600, textDecoration: 'underline', textTransform: 'capitalize'}}>Top Picks</Link>
           <div className="products-grid">
         {products.map((product) => (
           <Link

@@ -14,12 +14,13 @@
     background-color: $background;
     color: $black;
     line-height: 1.5 !important;
-     overflow-x: hidden;
-
+  
   }
 
   main {
     height: 100%;
+    overflow-x: hidden;
+
   }
   
   h1,

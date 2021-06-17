@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { motion } from 'framer-motion'
-
+import SEO from "../../components/seo";
 
 // run template query
 export const query = graphql`
@@ -44,6 +44,7 @@ const PantsTemplate = ({ data: { allItems } }) => {
   return (
     <>
       <main className="products-title container">
+      <SEO title={pageName} lang="en" />
       <h1>{pageName.name}</h1>
           <Link to="/top-picks" style={{fontSize: '20px', fontWeight: 600, textDecoration: 'underline', textTransform: 'capitalize'}}>Top Picks</Link>
           <div className="products-grid">

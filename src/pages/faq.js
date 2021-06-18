@@ -47,7 +47,7 @@ const FAQPage = () => {
             <p>
               Once the order details are finalized we will send you an invoice
               that is payable online. Once the payment is processed we will get
-              the order into our production que.
+              the order into our production queue.
             </p>
             <h2>What type of artwork files should I send?</h2>
             <p>

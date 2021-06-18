@@ -15,7 +15,8 @@ module.exports = {
     title: "Obelisk Studios",
     author: "Mike at Melody Digital",
     siteUrl: URL,
-    keywords: "wholesale clothing, garments, merch, merchandise, screenprint, tshirt, hoodies, hats, clothing, highquality, directtogarment, screenprinting, screenprinter, clothingbrand, customgarments, embroidery, smallbusiness, dtg, printing, Custom logo, custom brand, custom design, design, merch, merchandise, custom merch,"
+    keywords:
+      "wholesale clothing, garments, merch, merchandise, screenprint, tshirt, hoodies, hats, clothing, highquality, directtogarment, screenprinting, screenprinter, clothingbrand, customgarments, embroidery, smallbusiness, dtg, printing, Custom logo, custom brand, custom design, design, merch, merchandise, custom merch,",
   },
   plugins: [
     {
@@ -50,12 +51,6 @@ module.exports = {
 
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS,
-      },
-    },
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
@@ -88,13 +83,19 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-crisp-chat',
+      resolve: "gatsby-plugin-crisp-chat",
       options: {
         websiteId: process.env.CRISP_ID,
         enableDuringDevelop: true, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
         defer: true, // Optional. Sets the Crisp loading script to defer instead of async. Defaults to false.
         enableImprovedAccessibility: true, // Optional. Sets aria-label attribute on pop-up icon for screen readers. Defaults to true.
         delay: 5,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS,
       },
     },
   ],

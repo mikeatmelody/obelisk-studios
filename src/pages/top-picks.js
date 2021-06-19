@@ -19,13 +19,15 @@ const TopPicksPage = () => {
           }}
         >
           <div className="text-grid">
-            <h1 className="text-grid-title">OUR MOST POPULAR CLOTHING OPTIONS</h1>
+            <h1 className="text-grid-title">
+              OUR MOST POPULAR CLOTHING OPTIONS
+            </h1>
             <p>
               We have many options available through our wholesalers for just
-              about any garment you are looking for. These items featured here
-              are just a collection of our most commonly sold t-shirts, hoodies,
-              crewnecks and totes. Please feel free to request any custom brand
-              and we will do our best to supply it.
+              about any garment you are looking for. The items featured below
+              are a collection of our most commonly sold apparel. Please feel
+              free to request any custom brand and we will do our best to supply
+              it.
             </p>
           </div>
         </motion.div>

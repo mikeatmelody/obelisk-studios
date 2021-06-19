@@ -21,7 +21,7 @@ const Loading = () => {
     >
       <>
         <span className="text">
-        uno momento por favor... <br />
+        loading site... <br />
         </span>
       </>
       <span className="progress">{counter}%</span>

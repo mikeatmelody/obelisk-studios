@@ -19,21 +19,21 @@ module.exports = {
       "wholesale clothing, garments, merch, merchandise, screenprint, tshirt, hoodies, hats, clothing, highquality, directtogarment, screenprinting, screenprinter, clothingbrand, customgarments, embroidery, smallbusiness, dtg, printing, Custom logo, custom brand, custom design, design, merch, merchandise, custom merch",
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-breadcrumb`,
-      options: {
-        defaultCrumb: {
-          // location: required and must include the pathname property
-          location: {
-            pathname: "/top-picks",
-          },
-          // crumbLabel: required label for the default crumb
-          crumbLabel: "Top Picks",
-          // all other properties optional
-          crumbSeparator: " / ",
-        },
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-breadcrumb`,
+    //   options: {
+    //     defaultCrumb: {
+    //       // location: required and must include the pathname property
+    //       location: {
+    //         pathname: "/top-picks",
+    //       },
+    //       // crumbLabel: required label for the default crumb
+    //       crumbLabel: "Top Picks",
+    //       // all other properties optional
+    //       crumbSeparator: " / ",
+    //     },
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-layout`,
       options: {
@@ -96,6 +96,12 @@ module.exports = {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS,
+      },
+    },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: process.env.INSTAGRAM_USERNAME_ID,
       },
     },
   ],

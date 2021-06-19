@@ -30,13 +30,13 @@
 
   .image-wrapper {
     width: 100%;
-    max-width: fit-content;
+    min-width: 100%;
       
       @media (max-width: $layout-breakpoint-large) {
         width: 100%;
       }
       @media (max-width: $layout-breakpoint-medium) {
-        width: 100%;  
+        width: 100%; 
       }
       @media (max-width: $layout-breakpoint-small) {
         width: 100%;  

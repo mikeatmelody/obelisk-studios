@@ -29,21 +29,21 @@
   }
 
   .image-wrapper {
-    // width: 100%;
+    width: 100%;
     max-width: fit-content;
       
-      // @media (max-width: $layout-breakpoint-large) {
-      //   // width: 28vw;  
-      // }
-      // @media (max-width: $layout-breakpoint-medium) {
-      //   width: 100%;  
-      // }
-      // @media (max-width: $layout-breakpoint-small) {
-      //   width: 100%;  
-      // }
-      // @media (max-width: $layout-breakpoint-xsmall) {
-      //   width: 23.75vw;  
-      // }
+      @media (max-width: $layout-breakpoint-large) {
+        width: 100%;
+      }
+      @media (max-width: $layout-breakpoint-medium) {
+        width: 100%;  
+      }
+      @media (max-width: $layout-breakpoint-small) {
+        width: 100%;  
+      }
+      @media (max-width: $layout-breakpoint-xsmall) {
+        width: 100%;
+      }
      
   }
 

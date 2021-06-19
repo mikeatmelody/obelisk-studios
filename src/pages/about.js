@@ -1,8 +1,27 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import SEO from "../components/seo";
+// import { graphql } from 'gatsby';
+// import { GatsbyImage, getImage } from "gatsby-plugin-image";
+
+
+// export const query = graphql`
+//  {
+//   allInstaNode {
+//     edges {
+//       node {
+//         likes
+//         original
+//         caption
+//       }
+//     }
+//   }
+// }
+
+// `
 
 const AboutPage = () => {
+
   return (
     <>
       <SEO title="About" />
@@ -26,7 +45,15 @@ const AboutPage = () => {
               highlights of our most recent work! <br/>
               <a className="ig" href="https://instagram.com/obeliskstudios.ca/" target="_blank" rel="noreferrer">Instagram</a>
             </p>
-            
+            {/* {images.map((image) => (
+              <div>
+                  <GatsbyImage
+                  image={getImage(image.original)}
+                  alt={image.caption}
+                />
+              </div>
+            ))}
+             */}
           </div>
         </motion.div>
       </main>

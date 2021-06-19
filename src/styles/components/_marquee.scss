@@ -9,7 +9,7 @@ $move-final: calc(-50%);
     animation-play-state: running;
   }
   .marquee__inner {
-    width: fit-content;
+    // width: fit-content;
     display: flex;
     position: relative;
     transform: translate3d($move-initial, 0, 0);

@@ -26,9 +26,9 @@ const Banner = () => {
   const [playMarquee, setPlayMarquee] = useState(false);
 
   const BannerRowLong = [
-    "Premium Blanks",
-    "Embroidery",
-    "Screen Printing"
+    "Premium\xa0Blanks",
+    "\xa0 Embroidery",
+    "\xa0 Screen Printing"
   ]
 
   useEffect(() => {
@@ -39,7 +39,7 @@ const Banner = () => {
   return (
     <motion.div className='banner' variants={banner}>
       <BannerRowTop title={"Obelisk"} />
-      <BannerRowCenter title={(BannerRowLong.join())} playMarquee={playMarquee} />
+      <BannerRowCenter title={(BannerRowLong.join(', '))} playMarquee={playMarquee} />
       <BannerRowBottom title={"Studios"} />
     </motion.div>
   );

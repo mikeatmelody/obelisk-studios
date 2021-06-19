@@ -35,7 +35,7 @@ const Footer = () => {
       }}
     >
       <div className="content container">
-        <p className="col-1">778-806-2310</p>
+        <p className="col-1">Give us a call! 778-806-2310</p>
         <p className="col-2">tom@obeliskstudios.ca</p>
         <p className="col-3">955 E. Hastings Street</p>
         <p className="col-4">Vancouver, BC</p>

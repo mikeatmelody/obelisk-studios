@@ -64,12 +64,10 @@ const ContactPage = () => {
               Project Details:
               <textarea name="message" id="message" rows="1" />
             </label>
-            <p>
               <label className="upload">
                 Upload Media: <input type="file" name="picture" />
               </label>
-            </p>
-            <button type="submit">Send</button>
+            <button className="contact-button" type="submit">Send</button>
             <input className="clear" type="reset" value="Clear" />
           </form>
         </motion.div>

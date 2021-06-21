@@ -52,7 +52,7 @@ const TopPicksPage = () => {
                     alt="T Shirt Top Picks"
                     // layout="fullWidth"
                     loading="lazy"
-                    wi={600}
+                    wi={500}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
                   />
@@ -66,7 +66,7 @@ const TopPicksPage = () => {
                     alt="Hoodie Top Picks"
                     // layout="fullWidth"
                     loading="lazy"
-                    width={600}
+                    width={500}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
                   />
@@ -80,7 +80,7 @@ const TopPicksPage = () => {
                     alt="Crewneck Top Picks"
                     // layout="fullWidth"
                     loading="lazy"
-                    width={600}
+                    width={500}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
                   />
@@ -94,7 +94,7 @@ const TopPicksPage = () => {
                     alt="Pants Top Picks"
                     // layout="fullWidth"
                     loading="lazy"
-                    width={600}
+                    width={500}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
                   />
@@ -108,7 +108,7 @@ const TopPicksPage = () => {
                     alt="Bags and Hats Top Picks"
                     // layout="fullWidth"
                     loading="lazy"
-                    width={600}
+                    width={500}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
                   />
@@ -122,7 +122,7 @@ const TopPicksPage = () => {
                     alt="Bags and Hats Top Picks"
                     // layout="fullWidth"
                     loading="lazy"
-                    width={600}
+                    width={500}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
                   />

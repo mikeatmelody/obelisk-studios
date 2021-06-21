@@ -51,19 +51,19 @@ const TopPicksTemplate = ({ data: { item } }) => {
     <>
       <main>
         <div className="container" style={{fontSize: '20px', fontWeight: 600, textDecoration: 'underline', textTransform: 'capitalize'}}>
-        <Link to={`/top-picks/${item.contentType}`} >Back to {item.contentType}</Link>
+        <Link className to={`/top-picks/${item.contentType}`} >Back to {item.contentType}</Link>
         </div>
       <h2 style={{fontSize: "20px", fontWeight: 600}} className="tp-title container">{item.title}</h2>
       <p className="container"><i>${item.price}/unit</i></p>
         <div className="top-picks container">
         
-          <div className="thumbnail-image">
+          <div className="thumbnail-image container">
             <GatsbyImage image={image} alt={item.thumbnailImage.title} />
           </div>
-          <div className="hover-image">
+          <div className="hover-image container">
           <GatsbyImage image={hoverImage} alt={item.hoverImage.title} />
           </div>
-          <div className="styled-list">{output}</div>
+          <div className="styled-list container">{output}</div>
         </div>
       </main>
     </>

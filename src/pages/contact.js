@@ -26,14 +26,18 @@ const ContactPage = () => {
             have. You can expect a fast reply. We're happy to answer any and all
             questions and can easily provide mockups at your request.
           </p>
-          <form 
-          name="contact" 
-          method="POST" 
-          action="/success" 
-          className="form-section" 
-          data-netlify="true"
-          onSubmit="submit">
+          <form
+            name="contact"
+            method="POST"
+            action="/success"
+            netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
+            className="form-section"
+            data-netlify="true"
+            onSubmit="submit"
+          >
             <input type="hidden" name="contact-form" value="contact" />
+  
             <label className="form-name">
               Name:
               <input
@@ -64,15 +68,22 @@ const ContactPage = () => {
               Project Details:
               <textarea name="message" id="message" rows="1" />
             </label>
-              <label className="upload">
-                Upload Media: <input type="file" name="picture" />
+            <p className="hidden" style={{display: "none"}}>
+              <label>
+                Don’t fill this out if you’re human: <input name="bot-field" />
               </label>
-            <button className="contact-button" type="submit">Send</button>
+            </p>
+            <label className="upload">
+              Upload Media: <input type="file" name="picture" />
+            </label>
+            <div data-netlify-recaptcha="true"></div>
+            <button className="contact-button" type="submit">
+              Send
+            </button>
             <input className="clear" type="reset" value="Clear" />
           </form>
         </motion.div>
       </main>
-
     </>
   );
 };

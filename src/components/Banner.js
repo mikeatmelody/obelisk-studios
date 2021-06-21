@@ -27,8 +27,8 @@ const Banner = () => {
 
   const BannerRowLong = [
     "Premium\xa0Blanks",
-    "\xa0 Embroidery",
-    "\xa0 Screen Printing"
+    "\xa0Embroidery",
+    "\xa0Screen\xa0Printing"
   ]
 
   useEffect(() => {

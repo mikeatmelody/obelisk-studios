@@ -7,7 +7,7 @@ import SEO from "../../components/seo";
 export const query = graphql`
   {
     allItems: allContentfulTopPicks(
-      filter: { contentType: { eq: "hoodies" } }
+      filter: { contentType: { eq: "hoodies-and-jackets" } }
     ) {
       nodes {
         contentType
@@ -37,7 +37,7 @@ export const query = graphql`
 const HoodiesTemplate = ({ data: { allItems } }) => {
   const products = allItems.nodes;
   const pageName = {
-    name: "Hoodies",
+    name: "Hoodies & Jackets",
   };
   return (
     <>

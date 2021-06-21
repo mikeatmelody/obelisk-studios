@@ -14,6 +14,7 @@ export const query = graphql`
       slug
       contentType
       title
+      price
       hyperLink {
         raw
       }
@@ -53,6 +54,7 @@ const TopPicksTemplate = ({ data: { item } }) => {
         <Link to={`/top-picks/${item.contentType}`} >Back to {item.contentType}</Link>
         </div>
       <h2 style={{fontSize: "20px", fontWeight: 600}} className="tp-title container">{item.title}</h2>
+      <p className="container"><i>${item.price}/unit</i></p>
         <div className="top-picks container">
         
           <div className="thumbnail-image">

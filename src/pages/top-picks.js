@@ -58,11 +58,11 @@ const TopPicksPage = () => {
                   />
                 </div>
               </Link>
-              <Link to="/top-picks/hoodies">
+              <Link to="/top-picks/hoodies-and-jackets">
                 <div className="top-pick-card-2">
-                  <h1>Hoodies</h1>
+                  <h1>Hoodies & Jackets</h1>
                   <StaticImage
-                    src="../images/HOODIE.jpg"
+                    src="../images/Jackets-Hoodies1.jpg"
                     alt="Hoodie Top Picks"
                     // layout="fullWidth"
                     loading="lazy"

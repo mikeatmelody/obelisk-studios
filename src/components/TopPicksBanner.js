@@ -1,20 +1,10 @@
-import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
-
-const TopPicksBanner = () => {
-
-return (
-<>
-<div className="top-picks-banner container">
-<StaticImage 
-src="../images/pexels-tembela-bohle-1884583.jpg"
-alt="Top Picks Banner Image"
-layout="fullWidth"
->
-    <button></button>
- </StaticImage>   
-</div>
-</>
-)
-}
-export default TopPicksBanner
+// import React from "react";
+// import { Link } from "gatsby";
+// const TopPicksBanner = () => {
+//   return (
+//     <div className="top-picks-banner container">
+//       <Link to="/top-picks">Check out our staff's favourites!</Link>
+//     </div>
+//   );
+// };
+// export default TopPicksBanner;

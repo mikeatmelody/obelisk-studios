@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-
+import { Link } from "gatsby"
 //Scroll Observer
 import { useInView } from "react-intersection-observer";
 import { useAnimation, motion } from "framer-motion";
@@ -51,6 +51,9 @@ const HomeContent = () => {
           <li>Graphic Design Digital Printing (stickers,buttons, decals)</li>
         </ul>
         </div>
+        {/* <div className="cta-top-picks">
+        <Link to='/top-picks'>Checkout our Top Picks</Link>
+        </div> */}
       </div>
     </motion.div>
   );

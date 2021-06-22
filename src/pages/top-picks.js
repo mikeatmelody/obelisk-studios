@@ -48,11 +48,11 @@ const TopPicksPage = () => {
                 <div className="top-pick-card-1">
                   <h1>T-Shirts</h1>
                   <StaticImage
-                    src="../images/TSHIRTS.jpg"
+                    src="../images/GILDAN 2000 ULTRA COTTON 1.jpg"
                     alt="T Shirt Top Picks"
                     // layout="fullWidth"
                     loading="lazy"
-                    wi={500}
+                    width={500}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
                   />

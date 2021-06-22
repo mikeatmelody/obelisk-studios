@@ -50,9 +50,9 @@ const TopPicksPage = () => {
                   <StaticImage
                     src="../images/GILDAN 2000 ULTRA COTTON 1.jpg"
                     alt="T Shirt Top Picks"
-                    // layout="fullWidth"
+                    layout="fullWidth"
                     loading="lazy"
-                    width={500}
+                    // width={500}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
                   />
@@ -64,9 +64,9 @@ const TopPicksPage = () => {
                   <StaticImage
                     src="../images/Jackets-Hoodies1.jpg"
                     alt="Hoodie Top Picks"
-                    // layout="fullWidth"
+                    layout="fullWidth"
                     loading="lazy"
-                    width={500}
+                    // width={500}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
                   />
@@ -78,9 +78,9 @@ const TopPicksPage = () => {
                   <StaticImage
                     src="../images/crewneck.jpg"
                     alt="Crewneck Top Picks"
-                    // layout="fullWidth"
+                    layout="fullWidth"
                     loading="lazy"
-                    width={500}
+                    // width={500}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
                   />
@@ -92,9 +92,9 @@ const TopPicksPage = () => {
                   <StaticImage
                     src="../images/SWEATPANTS.jpg"
                     alt="Pants Top Picks"
-                    // layout="fullWidth"
+                    layout="fullWidth"
                     loading="lazy"
-                    width={500}
+                    // width={500}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
                   />
@@ -106,9 +106,9 @@ const TopPicksPage = () => {
                   <StaticImage
                     src="../images/bags-and-hats.jpg"
                     alt="Bags and Hats Top Picks"
-                    // layout="fullWidth"
+                    layout="fullWidth"
                     loading="lazy"
-                    width={500}
+                    // width={500}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
                   />
@@ -120,9 +120,9 @@ const TopPicksPage = () => {
                   <StaticImage
                     src="../images/KIDS.jpg"
                     alt="Bags and Hats Top Picks"
-                    // layout="fullWidth"
+                    layout="fullWidth"
                     loading="lazy"
-                    width={500}
+                    // width={500}
                     objectFit="cover"
                     // transformOptions={{ grayscale: true }}
                   />

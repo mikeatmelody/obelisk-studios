@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "gatsby";
 import { useLocation } from "@reach/router"
+import WordMark from '../images/svg/wordmark.svg'
 
 const Header = ({ menuState, setMenuState}) => {
   const location = useLocation()
@@ -21,7 +22,9 @@ const Header = ({ menuState, setMenuState}) => {
     >
       <header className="header-inner">
         <div className="logo">
-          <Link activeClassName="active" to="/">Obelisk Studios</Link>
+          <Link activeClassName="active" to="/">
+          <WordMark />
+          </Link>
         </div>
         <nav className="nav">
           <li>

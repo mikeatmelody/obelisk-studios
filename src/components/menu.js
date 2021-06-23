@@ -121,7 +121,7 @@ const Menu = ({ setMenuState, menuState }) => {
                     exit={{ y: 300, skewY: 40 }}
                     transition={{ delay: 0.3, ...transition }}
                   >
-                    <a href="mailto: tom@obeliskstudios.ca">
+                    <a href="mailto:tom@obeliskstudios.ca">
                       tom@obeliskstudios.ca
                     </a>
                   </motion.span>

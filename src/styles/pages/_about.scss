@@ -1,7 +1,7 @@
 .about {
   width: 100%;
   .about-section {
-    margin: 6.66vw;
+    margin: 0 6.66vw;
 
     // @media (max-width: $layout-breakpoint-small) {
     //     display: flex;
@@ -20,6 +20,14 @@
         font-size: 2rem;
         margin-top: 10vh;
       }
+
+    .sh-logo {
+      display: block;
+      justify-content: center;
+      margin: auto;
+      width: 100%;
+      margin-bottom: 2vw;
+    }
     }
     .about-image {
       @media (max-width: $layout-breakpoint-small) {

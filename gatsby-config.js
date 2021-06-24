@@ -91,7 +91,7 @@ module.exports = {
         start_url: `/`,
         lang: `en`,
         theme_color_in_head: false,
-        icon: `src/images/sh-obelisk-logo.png`,
+        icon: `src/images/favicon.png`,
       },
     },
     {

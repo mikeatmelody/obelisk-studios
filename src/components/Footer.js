@@ -34,10 +34,19 @@ const Footer = () => {
       }}
     >
       <div className="content container">
-        <p className="col-1">Give us a call! <a href="tel:7788062310">778-806-2310</a></p>
-        <p className="col-2"><a href="mailto:tom@obeliskstudios.ca">tom@obeliskstudios.ca</a></p>
+        <p className="col-1">
+          Give us a call! <a href="tel:7788062310">778-806-2310</a>
+        </p>
+        <p className="col-2">
+          <a href="mailto:tom@obeliskstudios.ca">tom@obeliskstudios.ca</a>
+        </p>
         <p className="col-3">955 E. Hastings Street</p>
-        <p className="col-4">Vancouver, BC</p>
+        <p className="col-4">
+          Vancouver, BC {" "}
+          <span role="img" aria-label="Canadian Flag">
+          🇨🇦
+          </span>{" "}
+        </p>
         <div className="footer__links"></div>
       </div>
     </motion.footer>

@@ -60,7 +60,7 @@ module.exports = {
       options: {
         props: {
           className: "logo",
-          title: "wordmark"
+          title: "obelisk-longhand"
         },
         rule: {
           include: /svg/ // See below to configure properly

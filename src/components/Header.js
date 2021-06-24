@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "gatsby";
 import { useLocation } from "@reach/router"
-import WordMark from '../images/svg/wordmark.svg'
+import WordMark from '../images/svg/obelisk-longhand.svg'
 
 const Header = ({ menuState, setMenuState}) => {
   const location = useLocation()

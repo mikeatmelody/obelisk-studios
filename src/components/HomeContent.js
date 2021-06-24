@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 //Scroll Observer
 import { useInView } from "react-intersection-observer";
 import { useAnimation, motion } from "framer-motion";
@@ -39,17 +39,18 @@ const HomeContent = () => {
           Screen Printing and Embroidery pricing are based on the quantity and
           number of colours used in your design. Please contact for a custom
           quote.
-        
-        <ul className="list">
-          <div>
-         <h2>Our services include:</h2>
-         </div>
-          <li>Multi-Colour Screen Printing - Plastisol Inks</li>
-          <li>Direct to Garment (DTG) Digital Printing</li>
-          <li>Embroidery</li>
-          <li>Eco-Friendly Water Based Screen Printing</li>
-          <li>Graphic Design Digital Printing (stickers,buttons, decals)</li>
-        </ul>
+          <ul className="list">
+            <div>
+              <h2>Our services include:</h2>
+            </div>
+            <li>Multi-Colour Screen Printing - Plastisol Inks</li>
+            <li>Direct to Garment (DTG) Digital Printing</li>
+            <li>Embroidery</li>
+            <li>Eco-Friendly Water Based Screen Printing</li>
+            <li>Graphic Design Digital Printing (stickers,buttons, decals)</li>
+          </ul><br/>
+          Minimum orders with printing are 12 units - Embroidery minimums
+          are 24, and blanks have no minimums!
         </div>
         {/* <div className="cta-top-picks">
         <Link to='/top-picks'>Checkout our Top Picks</Link>

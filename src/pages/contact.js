@@ -36,7 +36,7 @@ const ContactPage = () => {
             data-netlify="true"
             onSubmit="submit"
           >
-            <input type="hidden" name="contact-form" value="contact" />
+            <input type="hidden" name="contact" value="contact" />
   
             <label className="form-name">
               Name:

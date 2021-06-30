@@ -80,7 +80,7 @@ const ContactPage = () => {
             <button className="contact-button" type="submit">
               Send
             </button>
-            <input className="clear" type="reset" value="Clear" />
+            <input className="clear" name="clear" type="reset" value="Clear" />
           </form>
         </motion.div>
       </main>

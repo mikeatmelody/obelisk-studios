@@ -27,15 +27,15 @@ const ContactPage = () => {
             questions and can easily provide mockups at your request.
           </p>
           <form
-            name="contact"
+            name="obelisk-studios-contact"
             method="POST"
             action="/success"
-            netlify-honeypot="bot-field"
-            data-netlify-recaptcha="true"
-            className="form-section"
+            // netlify-honeypot="bot-field"
+            // data-netlify-recaptcha="true"
             data-netlify="true"
             onSubmit="submit"
           >
+            <div className="form-section">
             <input type="hidden" name="contact" value="contact" />
   
             <label className="form-name">
@@ -66,7 +66,7 @@ const ContactPage = () => {
             <br />
             <label className="form-message">
               Project Details:
-              <textarea name="message" id="message" rows="1" />
+              <textarea name="message" id="form-message-text-area" rows="1" />
             </label>
             <p className="hidden" style={{display: "none"}}>
               <label>
@@ -81,6 +81,7 @@ const ContactPage = () => {
               Send
             </button>
             <input className="clear" name="clear" type="reset" value="Clear" />
+            </div>
           </form>
         </motion.div>
       </main>

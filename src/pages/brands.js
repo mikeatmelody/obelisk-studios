@@ -1,28 +1,10 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import SEO from "../components/seo";
-// import { graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
-// import BrandsLogo from '../components/BrandsLogos'
 
-// run template query
-// export const query = graphql`
-//   {
-//    allBrands: allContentfulBrands {
-//       nodes {
-//         brandName
-//         logo {
-//           id
-//           gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, backgroundColor: "#f0eff1", resizingBehavior: FILL)
-//           title
-//         }
-//       }
-//     }
-//   }
-// `;
+import { StaticImage } from "gatsby-plugin-image";
 
 const BrandsPage = () => {
-  // const brands = allBrands.nodes;
   return (
     <>
       <SEO title="Brands" />
@@ -39,11 +21,11 @@ const BrandsPage = () => {
           }}
           className="brands"
         >
-          <StaticImage 
-          src="../images/brand-logos.png" 
-          alt="brand-logos"
-          layout="fullWidth" />
-
+          <StaticImage
+            src="../images/brand-logos.png"
+            alt="brand-logos"
+            layout="fullWidth"
+          />
         </motion.div>
       </main>
     </>
@@ -51,16 +33,3 @@ const BrandsPage = () => {
 };
 
 export default BrandsPage;
-
-
-
-          // {/* {brands.map((brand, index) => (
-          //   <div className="brands-section container" key={index}>
-          //     <GatsbyImage
-          //       key={index}
-          //       image={getImage(brand.logo)}
-          //       alt={brand.logo.title}
-          //     />
-          //     {/* <h1>{brand.brandName}</h1> */}
-          //     </div>
-          //   ))} */}

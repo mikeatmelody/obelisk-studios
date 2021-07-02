@@ -30,13 +30,14 @@ const ContactPage = () => {
             name="obelisk-studios-contact"
             method="POST"
             action="/success"
+            Content-Type="multipart/form-data"
             // netlify-honeypot="bot-field"
             // data-netlify-recaptcha="true"
             data-netlify="true"
             onSubmit="submit"
           >
             <div className="form-section">
-            <input type="hidden" name="contact" value="contact" />
+            <input type="hidden" name="obelisk-studios-contact" value="obelisk-studios-contact" />
   
             <label className="form-name">
               Name:

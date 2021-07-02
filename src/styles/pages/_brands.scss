@@ -1,47 +1,51 @@
-.brands {
-  margin-bottom: 40px;
-  @media (max-width: $layout-breakpoint-small) {
-    margin: 4vw;
-  }
-  .brand-title {
-    font-size: 3rem;
-  }
-    .brand-titles {
-      color: $black;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      font-size: 2rem;
-      margin: 4vw;
-      gap:40px;
+// .brands {
+//   margin-bottom: 40px;
+//   @media (max-width: $layout-breakpoint-small) {
+//     margin: 4vw;
+//   }
+//   .brand-title {
+//     font-size: 3rem;
+//   }
+//     .brand-titles {
+//       color: $black;
+//       display: grid;
+//       grid-template-columns: repeat(2, 1fr);
+//       font-size: 2rem;
+//       margin: 4vw;
+//       gap:40px;
 
-      @media (max-width: $layout-breakpoint-medium) {
-        grid-template-columns: repeat(2, 40vw);
-      }
+//       @media (max-width: $layout-breakpoint-medium) {
+//         grid-template-columns: repeat(2, 40vw);
+//       }
   
-          @media (max-width: $layout-breakpoint-small) {
-      display: block;
-      margin: 4vw;
-      font-size: 16px;
-      text-align: center;
-      margin-top: 8vh;
-      margin-bottom: 8vh;
-    }
-      .left-col {
-        z-index: 1;
-        grid-column: 1;
-        display: inline-block;
-      }
-      .right-col {
-        z-index: 1;
-        grid-column: 2;
-      }
-    }
-    .title {
-      font-size: 3.7rem;
-      font-weight: 600;
-      text-align: center;
-      margin: 2vw;
-    }
+//           @media (max-width: $layout-breakpoint-small) {
+//       display: block;
+//       margin: 4vw;
+//       font-size: 16px;
+//       text-align: center;
+//       margin-top: 8vh;
+//       margin-bottom: 8vh;
+//     }
+//       .left-col {
+//         z-index: 1;
+//         grid-column: 1;
+//         display: inline-block;
+//       }
+//       .right-col {
+//         z-index: 1;
+//         grid-column: 2;
+//       }
+//     }
+//     .title {
+//       font-size: 3.7rem;
+//       font-weight: 600;
+//       text-align: center;
+//       margin: 2vw;
+//     }
 
-  }
+//   }
+
+.brands {
+  margin: 3vh 0;
+}
   

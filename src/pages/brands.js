@@ -21,11 +21,14 @@ const BrandsPage = () => {
           }}
           className="brands"
         >
-          <StaticImage
-            src="../images/brand-logos.png"
-            alt="brand-logos"
-            layout="fullWidth"
-          />
+          <div>
+            <StaticImage
+              src="../images/brand-logos.png"
+              alt="brand-logos"
+              layout="fullWidth"
+              loading="lazy"
+            />
+          </div>
         </motion.div>
       </main>
     </>

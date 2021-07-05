@@ -108,7 +108,7 @@ const Menu = ({ setMenuState, menuState }) => {
                     exit={{ y: 300, skewY: 40 }}
                     transition={{ delay: 0.2, ...transition }}
                   >
-                    <Link to="/contact">Let's work together</Link>
+                    <Link to="/contact">Contact us</Link>
                   </motion.span>
                 </li>
                 <li>

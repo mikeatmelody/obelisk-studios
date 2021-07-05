@@ -45,7 +45,7 @@ const Header = ({ menuState, setMenuState}) => {
           </li>
         </nav>
         <div className="contact">
-          <a href="/contact">Let's work together</a>
+          <a href="/contact">Contact us</a>
         </div>
         <div 
         onClick={() => setMenuState(!menuState)} 

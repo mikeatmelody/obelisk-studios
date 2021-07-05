@@ -31,6 +31,7 @@ const TopPicksPage = () => {
             </p>
             <br />
             <p><b style={{fontWeight: "500"}}>Please note</b> that with all garments, the cost of XXL, XXXL+ sizes tends to be slightly higher then XS-XL.</p>
+            <Link style={{fontSize: "14px", fontWeight: "500", textDecoration: 'underline'}} to='/contact'>Contact us if you have questions</Link>
           </div>
         </motion.div>
 

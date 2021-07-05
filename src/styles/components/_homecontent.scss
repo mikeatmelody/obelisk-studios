@@ -61,5 +61,9 @@
   li::before{
     content: '-';
   } 
+  a {
+    font-size: 2rem;
+    text-decoration: underline;
+  }
 }
 

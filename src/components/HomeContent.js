@@ -52,6 +52,8 @@ const HomeContent = () => {
           Minimum orders with printing are 12 units - Embroidery minimums are
           24, and blanks have no minimums!
         </div>
+        <br/>
+        <Link to='/top-picks'>Check out our top picks</Link>
         {/* <div className="cta-top-picks">
         <Link to='/top-picks'>Checkout our Top Picks</Link>
         </div> */}

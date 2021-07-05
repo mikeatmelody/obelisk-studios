@@ -38,7 +38,7 @@ const IndexPage = () => {
               </motion.div>
               {/* <TopPicksBanner /> */}
             </div>
-    
+                
 
             <div className="container">
               <HomeContent />

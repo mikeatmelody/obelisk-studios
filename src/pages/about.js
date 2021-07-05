@@ -49,12 +49,12 @@ const AboutPage = () => {
               Vancouver based wholesale apparel company, supplying quality
               garments and uniforms at competitive rates. In house
               screenprinting and embroidery services offered. Corporate pricing
-              available. <br /> <br/>
+              available. <br /> <br />
               Since 2018 we have been providing quality garments and decoration
               for a multitude of great clients. We strive to “make it work with
               your budget”. Reaching a happy common ground and delivering you
               the best product we can is our goal, and mission. Below are some
-              highlights of our most recent work! <br /> <br/>
+              highlights of our most recent work! <br /> <br />
               <a
                 className="ig"
                 href="https://instagram.com/obeliskstudios.ca/"

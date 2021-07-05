@@ -65,11 +65,11 @@ const ContactPage = () => {
               Project Details:
               <textarea name="message" id="form-message-text-area" rows="1" />
             </label>
-            <p className="hidden" style={{display: "none"}}>
+            {/* <p className="hidden" style={{display: "none"}}> */}
               {/* <label>
                 Don’t fill this out if you’re human: <input name="bot-field" />
               </label> */}
-            </p>
+            {/* </p> */}
             <label className="upload">
               Upload Media: <input type="file" name="picture" />
             </label>

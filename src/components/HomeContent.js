@@ -33,12 +33,11 @@ const HomeContent = () => {
       <div className="home-content-section">
         <h1>Services</h1>
         <div className="copy">
-          Obelisk Studios is a multi-faceted print shop that specializes in
-          screen printing and design. Proudly located in East Vancouver, our
-          friendly in-house staff is here to help bring your designs to life.
-          Screen Printing and Embroidery pricing are based on the quantity and
-          number of colours used in your design. Please contact for a custom
-          quote.
+          Obelisk Studios is wholesale garment supplier, with an in house print
+          shop that specializes in screen printing and design. We are proudly
+          located in East Vancouver. Screen Printing and Embroidery pricing is
+          based on the quantity of garments and number of colours used in your
+          design. Please contact us for a custom quote.
           <ul className="list">
             <div>
               <h2>Our services include:</h2>
@@ -48,9 +47,10 @@ const HomeContent = () => {
             <li>Embroidery</li>
             <li>Eco-Friendly Water Based Screen Printing</li>
             <li>Graphic Design Digital Printing (stickers,buttons, decals)</li>
-          </ul><br/>
-          Minimum orders with printing are 12 units - Embroidery minimums
-          are 24, and blanks have no minimums!
+          </ul>
+          <br />
+          Minimum orders with printing are 12 units - Embroidery minimums are
+          24, and blanks have no minimums!
         </div>
         {/* <div className="cta-top-picks">
         <Link to='/top-picks'>Checkout our Top Picks</Link>

@@ -29,6 +29,8 @@ const TopPicksPage = () => {
               free to request any custom brand and we will do our best to supply
               it.
             </p>
+            <br />
+            <p><b style={{fontWeight: "500"}}>Please note</b> that with all garments, the cost of XXL, XXXL+ sizes tends to be slightly higher then XS-XL.</p>
           </div>
         </motion.div>
 
@@ -43,6 +45,7 @@ const TopPicksPage = () => {
         >
           <div className="container">
             <h1 className="title">Top Picks</h1>
+            <p></p>
             <div className="card-grid">
               <Link to="/top-picks/t-shirts">
                 <div className="top-pick-card-1">

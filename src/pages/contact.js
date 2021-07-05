@@ -27,14 +27,14 @@ const ContactPage = () => {
             questions and can easily provide mockups at your request.
           </p>
           <form
-            name="obelisk-studios-contact"
+            name="contact"
             method="POST"
             action="/success"
             data-netlify="true"
             onSubmit="submit"
           >
             <div className="form-section">
-            <input type="hidden" name="form-name" value="obelisk-studios-contact"/>
+            <input type="hidden" name="form-name" value="contact"/>
             <label className="form-name-label">
               Name:
               <input
@@ -66,14 +66,14 @@ const ContactPage = () => {
               <textarea name="message" id="form-message-text-area" rows="1" />
             </label>
             <p className="hidden" style={{display: "none"}}>
-              <label>
+              {/* <label>
                 Don’t fill this out if you’re human: <input name="bot-field" />
-              </label>
+              </label> */}
             </p>
             <label className="upload">
               Upload Media: <input type="file" name="picture" />
             </label>
-            <div data-netlify-recaptcha="true"></div>
+            {/* <div data-netlify-recaptcha="true"></div> */}
             <button className="contact-button" type="submit">
               Send
             </button>

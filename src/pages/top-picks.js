@@ -52,7 +52,7 @@ const TopPicksPage = () => {
                 <div className="top-pick-card-1">
                   <h1>T-Shirts</h1>
                   <StaticImage
-                    src="../images/GILDAN 2000 ULTRA COTTON 1.jpg"
+                    src="../images/tee.png"
                     alt="T Shirt Top Picks"
                     layout="fullWidth"
                     loading="lazy"
@@ -66,7 +66,7 @@ const TopPicksPage = () => {
                 <div className="top-pick-card-2">
                   <h1>Hoodies & Jackets</h1>
                   <StaticImage
-                    src="../images/Jackets-Hoodies1.jpg"
+                    src="../images/jack_hood.png"
                     alt="Hoodie Top Picks"
                     layout="fullWidth"
                     loading="lazy"
@@ -80,7 +80,7 @@ const TopPicksPage = () => {
                 <div className="top-pick-card-3">
                   <h1>Crewnecks</h1>
                   <StaticImage
-                    src="../images/crewneck.jpg"
+                    src="../images/crew.png"
                     alt="Crewneck Top Picks"
                     layout="fullWidth"
                     loading="lazy"
@@ -94,7 +94,7 @@ const TopPicksPage = () => {
                 <div className="top-pick-card-4">
                   <h1>Sweatpants</h1>
                   <StaticImage
-                    src="../images/SWEATPANTS.jpg"
+                    src="../images/sweat.png"
                     alt="Pants Top Picks"
                     layout="fullWidth"
                     loading="lazy"
@@ -108,7 +108,7 @@ const TopPicksPage = () => {
                 <div className="top-pick-card-5">
                   <h1>Bags & Hats</h1>
                   <StaticImage
-                    src="../images/bags-and-hats.jpg"
+                    src="../images/hat_bag.png"
                     alt="Bags and Hats Top Picks"
                     layout="fullWidth"
                     loading="lazy"
@@ -122,7 +122,7 @@ const TopPicksPage = () => {
                 <div className="top-pick-card-6">
                   <h1>Kids</h1>
                   <StaticImage
-                    src="../images/KIDS.jpg"
+                    src="../images/b.png"
                     alt="Bags and Hats Top Picks"
                     layout="fullWidth"
                     loading="lazy"

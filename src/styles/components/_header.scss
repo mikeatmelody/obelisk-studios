@@ -14,6 +14,7 @@
   @media (max-width: $layout-breakpoint-medium) {
     padding: 0 72px;
     font-size: 1.6rem;
+  
   }
   @media (max-width: $layout-breakpoint-xsmall) {
     padding: 0 12px;
@@ -42,6 +43,9 @@
       @media (max-width: $layout-breakpoint-medium) {
         display: none;
       }
+      @media (max-width: $layout-breakpoint-large) {
+       display: none;
+      }
       display: flex;
       align-items: center;
       justify-content: center;
@@ -63,7 +67,7 @@
         display: none;
       }
       @media (max-width: $layout-breakpoint-large) {
-        font-size: 2rem;
+        display: none;
       }
       a {
         color: $black;
@@ -77,6 +81,7 @@
         @media (max-width: $layout-breakpoint-medium) {
           flex: 1;
           font-size: 1.6rem;
+          // display: none;
         }
       }
     }
@@ -94,7 +99,7 @@
         background: darken($color: $white, $amount: 12);
       }
       @media (min-width: $layout-breakpoint-medium) {
-        display: none;
+        // display: none;
       }
       span {
         width: 20px;

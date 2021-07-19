@@ -110,16 +110,16 @@ module.exports = {
         trackingId: process.env.GOOGLE_ANALYTICS,
       },
     },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: process.env.INSTAGRAM_USERNAME_ID,
-        access_token: process.env.INSTAGRAM_ACCESS_TOKEN,
-        instagram_id: process.env.INSTAGRAM_APP_ID,
-        paginate: 100,
-        maxPosts: 12,
-        hashtags: true
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-instagram`,
+    //   options: {
+    //     username: process.env.INSTAGRAM_USERNAME_ID,
+    //     access_token: process.env.INSTAGRAM_ACCESS_TOKEN,
+    //     instagram_id: process.env.INSTAGRAM_APP_ID,
+    //     paginate: 100,
+    //     maxPosts: 12,
+    //     hashtags: true
+    //   },
+    // },
   ],
 };

@@ -2,21 +2,22 @@
   .text-grid {
     text-align: center;
     @media (max-width: $layout-breakpoint-small) {
-    text-align: center;
-    font-size: 16px;
-    margin: 12vw;
-
+      text-align: left;
+      font-size: 16px;
+      margin: 2vw 0;
+      padding: 12px 0;
     }
 
     h1 {
-      font-size: 16px;
+      // font-size: 16px;
       font-weight: 600;
+      
       z-index: 1;
       color: $black;
       @media (max-width: $layout-breakpoint-small) {
-       font-size: 1.7rem;
-       margin-bottom: 8px;
-
+        font-size: 2rem;
+        margin-bottom: 8px;
+        width: 75%;
       }
     }
     p {
@@ -24,8 +25,7 @@
       color: $black;
       margin: 8px 20vw;
       @media (max-width: $layout-breakpoint-small) {
-        margin: 0;
-
+        margin: 20px 0;
       }
     }
   }
@@ -35,7 +35,6 @@
     color: $black;
     font-size: 2.4rem;
     text-shadow: 2px 2px #646060;
-
 
     .brand-title {
       position: absolute;
@@ -62,13 +61,13 @@
     }
   }
   .title {
-    font-size: 2.7rem;
+    font-size: 2rem;
     font-weight: 600;
     text-align: center;
-    margin: 2vw;
+    margin: 6vw 0;
     @media (max-width: $layout-breakpoint-small) {
-      font-size: 1.7rem;
-     }
+      font-size: 2rem;
+    }
   }
 
   .card-grid {
@@ -80,6 +79,7 @@
     @media (max-width: $layout-breakpoint-small) {
       display: block;
       padding-top: 10px;
+      width: 100%;
     }
     .top-pick-card-1 {
       grid-column: 1;
@@ -93,7 +93,7 @@
         // transform: translate(-50%, -50%);
         // align-items: center;
       }
-      
+
       @media (max-width: $layout-breakpoint-small) {
         margin-top: 10px;
         margin-left: 6vw;
@@ -111,7 +111,7 @@
         // transform: translate(-50%, -50%);
         // align-items: center;
       }
-      
+
       @media (max-width: $layout-breakpoint-small) {
         margin-top: 10px;
         margin-left: 6vw;
@@ -121,26 +121,6 @@
     .top-pick-card-3 {
       grid-column: 3;
       grid-row: 1;
-  
-      h1 {
-        top: 50%;
-        left: 50%;
-        ccolor: $black;
-        text-align: center;
-        // transform: translate(-50%, -50%);
-        // align-items: center;
-      }
-      
-      @media (max-width: $layout-breakpoint-small) {
-        margin-top: 10px;
-        margin-left: 6vw;
-        margin-right: 6vw;
-      }
-    }
-    .top-pick-card-4 {
-      grid-column: 1;
-      grid-row: 2;
-   
 
       h1 {
         top: 50%;
@@ -150,7 +130,26 @@
         // transform: translate(-50%, -50%);
         // align-items: center;
       }
-      
+
+      @media (max-width: $layout-breakpoint-small) {
+        margin-top: 10px;
+        margin-left: 6vw;
+        margin-right: 6vw;
+      }
+    }
+    .top-pick-card-4 {
+      grid-column: 1;
+      grid-row: 2;
+
+      h1 {
+        top: 50%;
+        left: 50%;
+        color: $black;
+        text-align: center;
+        // transform: translate(-50%, -50%);
+        // align-items: center;
+      }
+
       @media (max-width: $layout-breakpoint-small) {
         margin-top: 10px;
         margin-left: 6vw;
@@ -168,7 +167,7 @@
         // transform: translate(-50%, -50%);
         // align-items: center;
       }
-      
+
       @media (max-width: $layout-breakpoint-small) {
         margin-top: 10px;
         margin-left: 6vw;
@@ -178,7 +177,7 @@
     .top-pick-card-6 {
       grid-column: 3;
       grid-row: 2;
-   
+
       h1 {
         top: 50%;
         left: 50%;
@@ -187,7 +186,7 @@
         // transform: translate(-50%, -50%);
         // align-items: center;
       }
-      
+
       @media (max-width: $layout-breakpoint-small) {
         margin-top: 10px;
         margin-left: 6vw;

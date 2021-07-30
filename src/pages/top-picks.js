@@ -24,14 +24,16 @@ const TopPicksPage = () => {
             </h1>
             <p>
               We have many options available through our wholesalers for just
-              about any garment you are looking for. The items featured below
+              about any garment you are looking for.
+             </p>
+             <p> 
+               The items featured below
               are a collection of our most commonly sold apparel. Please feel
               free to request any custom brand and we will do our best to supply
               it.
             </p>
-            <br />
-            <p><b style={{fontWeight: "500"}}>Please note</b> that with all garments, the cost of XXL, XXXL+ sizes tends to be slightly higher then XS-XL.</p>
-            <Link style={{fontSize: "14px", fontWeight: "500", textDecoration: 'underline'}} to='/contact'>Contact us if you have questions</Link>
+            <p><b style={{fontWeight: "600"}}>Please note:</b> that with all garments, the cost of XXL, XXXL+ sizes tends to be slightly higher then XS-XL.</p>
+            <Link style={{fontSize: "16px", fontWeight: "600", textDecoration: 'underline'}} to='/contact'>Contact us if you have questions</Link>
           </div>
         </motion.div>
 
@@ -44,7 +46,7 @@ const TopPicksPage = () => {
             delay: 2.6,
           }}
         >
-          <div className="container">
+          {/* <div className="container"> */}
             <h1 className="title">Top Picks</h1>
             <p></p>
             <div className="card-grid">
@@ -133,7 +135,7 @@ const TopPicksPage = () => {
                 </div>
               </Link>
             </div>
-          </div>
+          {/* </div> */}
         </motion.div>
       </main>
     </>

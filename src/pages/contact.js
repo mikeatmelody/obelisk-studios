@@ -41,9 +41,10 @@ const ContactPage = () => {
           <form
             name="contact"
             method="POST"
-            action="/success"
+            // action="/success"
             data-netlify="true"
-            onSubmit={handleSubmit}
+            // onSubmit={handleSubmit}
+            action={handleSubmit}
           >
             <div className="form-section">
             <input type="hidden" name="form-name" value="contact"/>

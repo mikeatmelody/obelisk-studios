@@ -1,9 +1,21 @@
-import * as React from "react";
-// import { Link } from "gatsby"
+import React, { useState } from "react";
+import { navigate } from "gatsby"
 import { motion } from "framer-motion";
 import SEO from "../components/seo";
 
 const ContactPage = () => {
+  const [name, setName] = useState("");
+  const handleInput = event => {
+    setName(event.target.value);
+  }
+  
+  const handleSubmit = event => {
+
+    event.preventDefault();
+ 
+    navigate("/success/", {state: { name }});
+  }
+
   return (
     <>
       <SEO title="Contact" />
@@ -31,7 +43,7 @@ const ContactPage = () => {
             method="POST"
             action="/success"
             data-netlify="true"
-            onSubmit="submit"
+            onSubmit={handleSubmit}
           >
             <div className="form-section">
             <input type="hidden" name="form-name" value="contact"/>
@@ -43,12 +55,15 @@ const ContactPage = () => {
                 name="name"
                 id="name"
                 placeholder="name"
+                value={name}
+                onChange={handleInput}
+                required
               />
             </label>
             <br />
             <label className="form-email">
               Email:
-              <input type="email" name="email" id="email" placeholder="email" />
+              <input type="email" name="email" id="email" placeholder="email" required />
             </label>
             <br />
             <label className="form-subject">

@@ -1,24 +1,9 @@
-import React, { useState } from "react";
-import { navigate } from "gatsby";
+import * as React from "react";
+// import { Link } from "gatsby"
 import { motion } from "framer-motion";
 import SEO from "../components/seo";
 
 const ContactPage = () => {
-  const [name, setName] = useState("");
-  const handleInput = (event) => {
-    setName(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    navigate("/success/", {
-      state: { name },
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    });
-  };
-
   return (
     <>
       <SEO title="Contact" />
@@ -43,71 +28,56 @@ const ContactPage = () => {
           </p>
           <form
             name="contact"
-            // method="POST"
-            // action="/success"
+            method="POST"
+            action="/success"
             data-netlify="true"
-            // onSubmit={handleSubmit}
-            action={handleSubmit}
+            onSubmit="submit"
           >
             <div className="form-section">
-              <input type="hidden" name="form-name" value="contact" />
-              <label className="form-name-label">
-                Name:
-                <input
-                  className="name-input"
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="name"
-                  value={name}
-                  onChange={handleInput}
-                  required
-                />
-              </label>
-              <br />
-              <label className="form-email">
-                Email:
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="email"
-                  required
-                />
-              </label>
-              <br />
-              <label className="form-subject">
-                Subject:
-                <input
-                  type="text"
-                  name="subject"
-                  id="subject"
-                  placeholder="subject"
-                />
-              </label>
-              <br />
-              <label className="form-message">
-                Project Details:
-                <textarea name="message" id="form-message-text-area" rows="1" />
-              </label>
-              {/* <p className="hidden" style={{display: "none"}}> */}
+            <input type="hidden" name="form-name" value="contact"/>
+            <label className="form-name-label">
+              Name:
+              <input
+                className="name-input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="name"
+              />
+            </label>
+            <br />
+            <label className="form-email">
+              Email:
+              <input type="email" name="email" id="email" placeholder="email" />
+            </label>
+            <br />
+            <label className="form-subject">
+              Subject:
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="subject"
+              />
+            </label>
+            <br />
+            <label className="form-message">
+              Project Details:
+              <textarea name="message" id="form-message-text-area" rows="1" />
+            </label>
+            {/* <p className="hidden" style={{display: "none"}}> */}
               {/* <label>
                 Don’t fill this out if you’re human: <input name="bot-field" />
               </label> */}
-              {/* </p> */}
-              <label className="upload">
-                Upload Media: <input type="file" name="picture" />
-              </label>
-              {/* <div data-netlify-recaptcha="true"></div> */}
-              <button className="contact-button" type="submit">
-                Send
-              </button>
-              <input
-                className="clear"
-                name="clear"
-                type="reset"
-                value="Clear"
-              />
+            {/* </p> */}
+            <label className="upload">
+              Upload Media: <input type="file" name="picture" />
+            </label>
+            {/* <div data-netlify-recaptcha="true"></div> */}
+            <button className="contact-button" type="submit">
+              Send
+            </button>
+            <input className="clear" name="clear" type="reset" value="Clear" />
             </div>
           </form>
         </motion.div>

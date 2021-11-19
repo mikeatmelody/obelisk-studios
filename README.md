@@ -2,8 +2,7 @@
 
 <h1>Obelisk Studios</h1>
 
-
-4.  **Built With**
+ **Built With**
 
     - [Framer Motion](https://www.framer.com/motion/)
 

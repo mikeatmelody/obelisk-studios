@@ -1,6 +1,4 @@
 import * as React from "react";
-// import { Link } from "gatsby"
-
 import { motion } from "framer-motion";
 import SEO from "../components/seo";
 import HomeContent from "../components/HomeContent";
@@ -32,10 +30,8 @@ const ServicesPage = () => {
               <StaticImage
                 src="../images/OBL Filler 7 1.jpg"
                 alt="Services Image"
-                // width={600}
                 layout="fullWidth"
                 aspectRatio={16 / 9}
-                // transformOptions={{ grayscale: true }}
               />
               </div>
           </div>

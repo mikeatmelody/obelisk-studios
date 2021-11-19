@@ -1,16 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import SEO from "../components/seo";
-// import { graphql } from "gatsby";
-// import { GatsbyImage } from "gatsby-plugin-image";
-// // import SwiperCore, { EffectCube } from 'swiper';
-// import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-// import 'swiper/swiper.scss';
-// import 'swiper/components/effect-cube/effect-cube.scss';
-
-// // install Virtual module
-// SwiperCore.use([EffectCube]);
 
 const AboutPage = () => {
   return (
@@ -63,24 +53,6 @@ const AboutPage = () => {
               >
                 Instagram
               </a>
-              {/* <Swiper
-                spaceBetween={50}
-                slidesPerView={1}
-                navigation
-                // effect="cube"
-                watchSlidesProgress
-                // onSlideChange={() => console.log("slide change")}
-                // onSwiper={(swiper) => console.log(swiper)}
-              >
-                {data.slideShow.edges.map(({ node }) => (
-                  <SwiperSlide key={node.id}>
-                    <GatsbyImage
-                      image={node.childImageSharp.gatsbyImageData}
-                      alt={node.base}
-                    />
-                  </SwiperSlide>
-                ))}
-              </Swiper> */}
             </div>
           </div>
         </motion.div>
@@ -90,31 +62,3 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
-
-// export const pageQuery = graphql`
-//   query {
-//     slideShow: allFile(
-//       filter: { relativeDirectory: { eq: "about-slider" } }
-//       sort: { fields: base, order: ASC }
-//     ) {
-//       edges {
-//         node {
-//           id
-//           relativePath
-//           base
-//           childImageSharp {
-//             gatsbyImageData(
-//               width: 900
-//               # height: 600
-//               # layout: FULL_WIDTH
-//               placeholder: BLURRED
-//               quality: 100
-//               blurredOptions: { width: 100 }
-//               # transformOptions: { cropFocus: CENTER, fit: COVER }
-//             )
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;

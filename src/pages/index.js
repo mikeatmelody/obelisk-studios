@@ -5,9 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import Banner from "../components/Banner";
 import HomeContent from "../components/HomeContent";
 import SEO from "../components/seo";
-// import TopPicksBanner from "../components/TopPicksBanner";
 
-// markup
 const IndexPage = () => {
   return (
     <>
@@ -34,27 +32,12 @@ const IndexPage = () => {
                   aspectRatio={21 / 9}
                   loading="blurred"
                 />
-                
               </motion.div>
-              {/* <TopPicksBanner /> */}
             </div>
-                
 
             <div className="container">
               <HomeContent />
             </div>
-
-            {/* <div className="home-services-grid container" style={{ marginBottom: "10vh" }}>
-              <HomeContent />
-              <StaticImage
-                src="../images/home-page-services.jpg"
-                alt="Home page services image"
-                placeholder="blurred"
-                layout="fullWidth"
-                loading="blurred"
-                transformOptions={{ grayscale: true }}
-              />
-            </div> */}
           </>
         </AnimatePresence>
       </AnimateSharedLayout>

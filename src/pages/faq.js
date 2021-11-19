@@ -7,29 +7,31 @@ const FAQPage = () => {
       <main className="container">
         <title>FAQ</title>
         <div className="faq">
-        
           <motion.h1
-                  initial={{ opacity: 0, y: -60 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    ease: "easeInOut",
-                    duration: 1,
-                    delay: 1.4,
-                  }}>
+            initial={{ opacity: 0, y: -60 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 1,
+              delay: 1.4,
+            }}
+          >
             FAQ{" "}
             <span role="img" aria-label="face with monocle">
               🧐
             </span>{" "}
           </motion.h1>
-      
-              <motion.div className="wrapper"
-                   initial={{ opacity: 0, y: 60 }}
-                   animate={{ opacity: 1, y: 0 }}
-                   transition={{
-                     ease: "easeInOut",
-                     duration: 1,
-                     delay: 2,
-                   }}>
+
+          <motion.div
+            className="wrapper"
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 1,
+              delay: 2,
+            }}
+          >
             <h2>How do I place an order? </h2>
             <p>
               To place an order, please first have a look through our top
@@ -106,8 +108,7 @@ const FAQPage = () => {
             </p>
             <h2>Do you ship to the USA?</h2>
             <p>We do!</p>
-            </motion.div>
-
+          </motion.div>
         </div>
       </main>
     </>
